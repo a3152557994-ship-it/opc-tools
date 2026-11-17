@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPC Micro-Tools Hub · 16 款零云端隐私优先 AI 与效率微工具矩阵</title>
+  <meta name="description" content="16 款开箱即用、100% 本地隐私优先的独立微工具矩阵：覆盖 AI Agent 预算熔断、GEO 体检修复、标书废标排雷、证件照精准卡 KB、透明印章、发票拼版、试卷去手写、灵动岛提词器等。支持单品买断或 $49 / ¥168 全通码一码解锁。" />
+  <link rel="canonical" href="https://a3152557994-ship-it.github.io/opc-tools/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "OPC Micro-Tools Hub",
+    "url": "https://a3152557994-ship-it.github.io/opc-tools/",
+    "description": "16 privacy-first local AI, developer, B2B, and document micro-utilities with one-time lifetime licensing."
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #0b0e14;
+      --card: #131822;
+      --line: #232c3d;
+      --ink: #f3f6fc;
+      --muted: #9aa6bd;
+      --accent: #3b82f6;
+      --green: #10b981;
+      --amber: #f59e0b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Inter", sans-serif;
+      line-height: 1.6;
+      padding-bottom: 64px;
+    }
+    .wrap { max-width: 1160px; margin: 0 auto; padding: 0 20px; }
+    header {
+      padding: 44px 0 28px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      color: #60a5fa;
+      background: rgba(59, 130, 246, 0.14);
+      border: 1px solid rgba(59, 130, 246, 0.35);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+    h1 { font-size: 30px; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .sub { color: var(--muted); max-width: 720px; font-size: 15px; }
+    .lang-btn {
+      background: var(--card);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .bundle-banner {
+      margin: 26px 0;
+      padding: 22px 24px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(37, 99, 235, 0.22), rgba(16, 185, 129, 0.14));
+      border: 1px solid rgba(96, 165, 250, 0.4);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .bundle-banner h2 { font-size: 20px; margin-bottom: 4px; }
+    .bundle-banner p { color: #cbd5e1; font-size: 14px; }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      padding: 11px 20px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      display: inline-block;
+    }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .chip {
+      background: var(--card);
+      color: var(--muted);
+      border: 1px solid var(--line);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .chip.active { background: var(--ink); color: var(--bg); border-color: var(--ink); font-weight: 600; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .cat-tag {
+      font-size: 11px;
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+    }
+    .card h3 { font-size: 17px; margin: 4px 0 6px; }
+    .card p { color: var(--muted); font-size: 13.5px; }
+    .card-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+    }
+    .price { font-weight: 700; color: var(--amber); font-size: 13.5px; }
+    .launch-link {
+      color: #60a5fa;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 13.5px;
+    }
+    .verifier {
+      margin-top: 34px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 22px;
+    }
+    .verifier h3 { font-size: 16px; margin-bottom: 8px; }
+    .v-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+    .v-row input {
+      flex: 1;
+      min-width: 240px;
+      background: #0b0e14;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 13px;
+    }
+    .v-status { margin-top: 10px; font-size: 13px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <span class="badge">100% Local-First · Zero Subscription Trap · Ed25519 Offline License</span>
+        <h1 id="heroTitle">OPC 独立微工具矩阵总站（16 款即开即用）</h1>
+        <p class="sub" id="heroSub">拒绝包月恶意扣费、拒绝敏感文件上传云端。每一款工具均支持免费在线体验核心功能，单品一杯奶茶钱永久买断，或使用全通码一码解锁全部 16 款 Pro 能力。</p>
+      </div>
+      <button class="lang-btn" id="langBtn">EN / 中文</button>
+    </header>
+
+    <section class="bundle-banner">
+      <div>
+        <h2 id="bundleTitle">All-Access 全矩阵通票：¥168 / $49 一次性买断全部 16 款工具</h2>
+        <p id="bundleDesc">签发一枚 `p="*"` 全通型 Ed25519 激活码（OPC1.），在下方任意工具输入同一枚激活码即可永久解锁全部 Pro 功能。</p>
+      </div>
+      <a class="btn-primary" id="buyBundleBtn" href="mailto:3152557994@qq.com?cc=a3152557994@gmail.com&subject=%5BOPC%20All-Access%5D%20%E8%B4%AD%E4%B9%B0%E5%85%A8%E7%9F%A9%E9%98%B516%E6%AC%BE%E9%80%9A%E7%A5%A8%20(%C2%A5168%2F%2449)&body=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E8%B4%AD%E4%B9%B0%20OPC%20All-Access%20%E5%85%A8%E7%9F%A9%E9%98%B5%E9%80%9A%E7%A5%A8%EF%BC%88%C2%A5168%20%2F%20%2449%EF%BC%89%EF%BC%8C%E6%8E%A5%E6%94%B6%E6%BF%80%E6%B4%BB%E7%A0%81%E9%82%AE%E7%AE%B1%EF%BC%9A">立即申领全通码 →</a>
+    </section>
+
+    <div class="filters" id="filterBar">
+      <button class="chip active" data-cat="all">全部 (16)</button>
+      <button class="chip" data-cat="dev">开发者与 AI Agent (4)</button>
+      <button class="chip" data-cat="b2b">跨境电商与 B2B 排雷 (4)</button>
+      <button class="chip" data-cat="doc">办公印章·发票·表格 (4)</button>
+      <button class="chip" data-cat="life">考公证件·试卷·口播 (4)</button>
+    </div>
+
+    <main class="grid" id="toolGrid"></main>
+
+    <section class="verifier">
+      <h3>OPC1. 激活码真伪与权限在线核验器（浏览器本地 WebCrypto Ed25519）</h3>
+      <p style="font-size:13px;color:var(--muted);">支持核验单品激活码与 `*` 全矩阵通票，全程零网络请求。</p>
+      <div class="v-row">
+        <input id="keyInput" type="text" placeholder="粘贴 OPC1.xxx.yyy 激活码..." />
+        <button class="btn-primary" id="verifyBtn" type="button">立即核验</button>
+      </div>
+      <div class="v-status" id="verifyOut">等待输入激活码。</div>
+    </section>
+  </div>
+
+  <script type="module">
+    const PUBLIC_SPKI_B64 = "MCowBQYDK2VwAyEAP5NCVP7CT0tgaGLSGMe4r87SjYRWTM6gN6igBZYSXys=";
+    export const TOOLS = [
+      { id: "01", slug: "agent-guard", cat: "dev", zh: "Agent-Guard · AI 算力透视与死循环熔断器", en: "Agent-Guard · Token X-Ray & Loop Breaker", descZh: "扫描 Claude Code / Codex 会话成本热力图，自动拦截死循环白烧 API。", descEn: "Local token audit & automatic SIGSTOP circuit breaker for runaway coding agents.", price: "$19 / ¥49" },
+      { id: "02", slug: "geo-doctor", cat: "b2b", zh: "GEO-Doctor · ChatGPT 商铺可见度体检与修复包", en: "GEO-Doctor · AI Search Visibility & llms.txt Kit", descZh: "12 项 AI 搜索推荐度评分，一键生成专属 llms.txt 与零报错 JSON-LD。", descEn: "12-point ChatGPT visibility audit + instant llms.txt & Schema repair bundle.", price: "$29 / ¥99" },
+      { id: "03", slug: "idphoto-kb", cat: "life", zh: "公考教资证件照裁剪与精准卡 KB 压缩器", en: "IDPhoto-KB · Exact KB Exam Photo Compressor", descZh: "295×413px 精准锁定 15–28KB 区间，纯前端防穿洞换底 + 6寸8连冲印排版。", descEn: "100% local exam ID photo cropper, background swapper & exact KB solver.", price: "Free + ¥9.9 Pro" },
+      { id: "04", slug: "store-radar-mcp", cat: "dev", zh: "Store-Radar MCP · App Store 差评聚类与竞品雷达", en: "Store-Radar MCP · App Store Pain-Point Miner", descZh: "在 Cursor / Claude Code 内直查同行定价与 1–3 星差评高频切口生成作战卡。", descEn: "Standard stdio MCP server mining App Store 1-3 star reviews into battlecards.", price: "$19 / ¥68" },
+      { id: "05", slug: "edge-table-cleaner", cat: "doc", zh: "网页复杂表格一键清洗转标准 Excel 插件", en: "Edge Table Cleaner · HTML Table to Clean XLSX", descZh: "展开跨行跨列合并单元格、剥离千分位与货币符、跨分页纵向合并零上传导出。", descEn: "Unmerge complex rowspan/colspan DOM tables into clean XLSX/CSV offline.", price: "¥19 / $9.9" },
+      { id: "06", slug: "safari-clean-speed", cat: "dev", zh: "Safari 网页净阅展开 + HTML5 视频 4x 倍速画中画", en: "Safari Clean & Speed · Read-More Unlocker & 4x PiP", descZh: "自动展开手机网页折叠遮罩防强跳 App，接管任意视频解锁倍速画中画与转 Markdown。", descEn: "Auto-expand read-more masks, unlock 0.5-4x HTML5 video speed & clean Markdown.", price: "¥8 / $2.99" },
+      { id: "07", slug: "seal-pdf", cat: "doc", zh: "真透明底手写签字抠图与合同骑缝章工具", en: "Seal-PDF · Transparent Signature & Straddle Stamp", descZh: "纸面实拍签名秒变真 Alpha 透明 PNG，支持合同拖拽盖章与多页骑缝章自动切分。", descEn: "Local adaptive alpha signature extraction & multi-page straddle stamp splitter.", price: "¥15 买断" },
+      { id: "08", slug: "invoice-a4", cat: "doc", zh: "电子发票唯一号查重台账与 A4 一页两张报销拼版", en: "Invoice-A4 · Dedup Ledger & 2-Up A4 Print Builder", descZh: "免登录零上传，20位全电发票精准防重排雷，一键出财务台账与上下两联省纸打印版。", descEn: "Zero-login invoice deduplication ledger & 2-per-page A4 reimbursement sheet.", price: "¥18 买断" },
+      { id: "09", slug: "paper-clean", cat: "life", zh: "拍试卷去手写还原空白卷 + 填空题智能留白打印", en: "Paper-Clean · Exam Handwriting Remover & AirPrint", descZh: "零开屏广告，自适应去阴影漂白卷面、抹除红蓝批改笔迹并插入解题空白框。", descEn: "Remove red/blue pen marks & shadows from test papers locally for clean re-printing.", price: "¥15 买断" },
+      { id: "10", slug: "island-prompter", cat: "life", zh: "贴紧灵动岛防飘眼悬浮提词器 + 真画中画跟读", en: "Island-Prompter · Camera-Line PiP Voice Teleprompter", descZh: "顶边锁死眼神防乱飘，原生画中画悬浮在任意相机/直播软件上方，本地语音跟读。", descEn: "Floating Picture-in-Picture teleprompter with local Web Speech voice tracking.", price: "¥12 买断" },
+      { id: "15", slug: "exam-trap-cards", cat: "life", zh: "2026 考公/教资高频易错陷阱题手机沉浸刷题卡", en: "Exam-Trap Cards · Spaced-Repetition Pitfall Deck", descZh: "精选行测申论与教资高频出题人挖坑点 + 秒杀口诀，离线滑卡判分自动收错题。", descEn: "Mobile offline flashcard deck targeting civil-service & teacher exam traps.", price: "¥19.9 买断" },
+      { id: "16", slug: "smb-contract-guard", cat: "doc", zh: "小微商家租赁/外包/带货合同 12 大霸王条款排雷器", en: "SMB Contract Guard · 12 Unfair Clause Scanner", descZh: "粘贴合同秒级标红不对等陷阱条款并给出商业谈判替换话术 + 4套补充协议模板。", descEn: "Local contract unfair-clause highlighter + negotiation rewrites (non-legal ref).", price: "¥19.9 买断" },
+      { id: "17", slug: "agent-shipkit", cat: "dev", zh: "Agent-ShipKit · Claude/Cursor 商业变现 6 套技能包", en: "Agent-ShipKit · 6 Revenue-Ready Agent Skills", descZh: "含差评挖掘、零服务端 Ed25519 付费墙、GEO 生成与冷启动宣发全套可执行工程脚本。", descEn: "6 production SKILL.md workflows + zero-dep CLI scripts for solo founders.", price: "$29 / ¥99" },
+      { id: "18", slug: "shopify-faq-geo", cat: "b2b", zh: "Shopify 买家差评疑虑转动态 FAQ + Liquid 组件注入器", en: "Shopify FAQ-GEO · Review Objection to Liquid & Schema", descZh: "聚类评论 6 大购买阻力，直出高转化消除顾虑 Q&A、FAQPage Schema 与 .liquid 模块。", descEn: "Turn raw product reviews into conversion FAQs, JSON-LD & Shopify OS 2.0 Liquid.", price: "$29 / ¥99" },
+      { id: "19", slug: "silicon-brief", cat: "b2b", zh: "Silicon-Brief · 硅谷 AI 财报与论文 3 分钟双语拆解站", en: "Silicon-Brief · Bilingual AI Unit-Economics Briefings", descZh: "算力成本曲线、Micro-SaaS 留存基准与端侧变现图谱，支持双语语音播客级听读。", descEn: "Executive tear-downs of AI margins, GEO shifts & micro-SaaS retention benchmarks.", price: "¥29 / 季" },
+      { id: "20", slug: "bid-docx-checker", cat: "b2b", zh: "标书排雷王 · 招投标 .docx 废标项纯本地交叉核验器", en: "BidGuard · Offline .docx Tender Disqualification Checker", descZh: "断网内存解压 .docx，精准抓出大小写金额分位差错、页眉串名、工期冲突与漏填项。", descEn: "100% browser-local .docx parser catching RMB amount mismatches & header leaks.", price: "¥29 / ¥99" }
+    ];
+
+    let lang = "zh";
+    let activeCat = "all";
+
+    function render() {
+      const grid = document.getElementById("toolGrid");
+      const list = activeCat === "all" ? TOOLS : TOOLS.filter(t => t.cat === activeCat);
+      grid.innerHTML = list.map(t => `
+        <article class="card">
+          <div>
+            <div class="cat-tag">#${t.id} · ${t.cat.toUpperCase()}</div>
+            <h3>${lang === "zh" ? t.zh : t.en}</h3>
+            <p>${lang === "zh" ? t.descZh : t.descEn}</p>
+          </div>
+          <div class="card-foot">
+            <span class="price">${t.price}</span>
+            <a class="launch-link" href="https://a3152557994-ship-it.github.io/${t.slug}/" target="_blank" rel="noopener">
+              ${lang === "zh" ? "立即打开 →" : "Launch Tool →"}
+            </a>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    document.getElementById("langBtn").addEventListener("click", () => {
+      lang = lang === "zh" ? "en" : "zh";
+      document.getElementById("heroTitle").textContent = lang === "zh"
+        ? "OPC 独立微工具矩阵总站（16 款即开即用）"
+        : "OPC Micro-Tools Hub · 16 Local-First Utilities";
+      document.getElementById("heroSub").textContent = lang === "zh"
+        ? "拒绝包月恶意扣费、拒绝敏感文件上传云端。每一款工具均支持免费在线体验核心功能，单品一杯奶茶钱永久买断，或使用全通码一码解锁全部 16 款 Pro 能力。"
+        : "Zero cloud data leaks, zero subscription traps. Try every tool free in your browser — unlock individual lifetime licenses or grab the $49 All-Access Master Key.";
+      render();
+    });
+
+    document.getElementById("filterBar").addEventListener("click", (e) => {
+      const btn = e.target.closest(".chip");
+      if (!btn) return;
+      document.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+      btn.classList.add("active");
+      activeCat = btn.dataset.cat;
+      render();
+    });
+
+    function b64UrlToBytes(s) {
+      const pad = s.replace(/-/g, "+").replace(/_/g, "/") + "===".slice((s.length + 3) % 4);
+      const bin = atob(pad);
+      return Uint8Array.from(bin, c => c.charCodeAt(0));
+    }
+
+    document.getElementById("verifyBtn").addEventListener("click", async () => {
+      const out = document.getElementById("verifyOut");
+      const raw = document.getElementById("keyInput").value.trim();
+      const parts = raw.split(".");
+      if (parts.length !== 3 || parts[0] !== "OPC1") {
+        out.style.color = "#f87171";
+        out.textContent = "格式无效：激活码应以 OPC1. 开头并包含三段。";
+        return;
+      }
+      try {
+        const spki = Uint8Array.from(atob(PUBLIC_SPKI_B64), c => c.charCodeAt(0));
+        const pubKey = await crypto.subtle.importKey("spki", spki, { name: "Ed25519" }, false, ["verify"]);
+        const ok = await crypto.subtle.verify(
+          "Ed25519",
+          pubKey,
+          b64UrlToBytes(parts[2]),
+          new TextEncoder().encode(`OPC1.${parts[1]}`)
+        );
+        if (!ok) {
+          out.style.color = "#f87171";
+          out.textContent = "验签失败：签名不匹配或已被篡改。";
+          return;
+        }
+        const payload = JSON.parse(new TextDecoder().decode(b64UrlToBytes(parts[1])));
+        out.style.color = "#34d399";
+        out.textContent = `验签通过 ✓ ｜ 适用产品：${payload.p === "*" ? "全矩阵 16 款通票 (*)" : payload.p} ｜ 档位：${payload.plan} ｜ 有效期：${payload.exp ? new Date(payload.exp * 1000).toLocaleDateString() : "永久有效"}`;
+      } catch (err) {
+        out.style.color = "#f87171";
+        out.textContent = "核验异常：" + err.message;
+      }
+    });
+
+    render();
+  </script>
+</body>
+</html>

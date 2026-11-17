@@ -1,0 +1,26 @@
+# OPC Micro-Tools Hub (16 Local-First AI & Productivity Utilities)
+
+> Official Storefront & Directory: https://a3152557994-ship-it.github.io/opc-tools/
+> License Model: Free instant core usage + one-time lifetime buyout per tool ($2.99–$29 / ¥8–¥99) or All-Access Master Key ($49 / ¥168, `p="*"` Ed25519 `OPC1.` token).
+
+## Live Tools Directory
+
+- **Agent-Guard** (#01): https://a3152557994-ship-it.github.io/agent-guard/ — Local AI coding agent token cost audit & runaway loop SIGSTOP circuit breaker.
+- **GEO-Doctor** (#02): https://a3152557994-ship-it.github.io/geo-doctor/ — 12-point ChatGPT store visibility audit + `llms.txt` & JSON-LD repair bundle.
+- **IDPhoto-KB** (#03): https://a3152557994-ship-it.github.io/idphoto-kb/ — Civil-service & teacher exam photo cropper with exact KB range compression & 6-inch 8-up print layout.
+- **Store-Radar MCP** (#04): https://a3152557994-ship-it.github.io/store-radar-mcp/ — App Store competitor pricing & 1-3 star pain-point clustering MCP server.
+- **Edge Table Cleaner** (#05): https://a3152557994-ship-it.github.io/edge-table-cleaner/ — Offline HTML rowspan/colspan table unmerger & clean XLSX/CSV exporter (Web + MV3 Extension).
+- **Safari Clean & Speed** (#06): https://a3152557994-ship-it.github.io/safari-clean-speed/ — Auto-expand mobile web read-more masks + 0.5x-4x HTML5 video PiP + clean Markdown extractor.
+- **Seal-PDF** (#07): https://a3152557994-ship-it.github.io/seal-pdf/ — Local handwritten signature alpha extraction, transparent seal & multi-page straddle stamp tool.
+- **Invoice-A4** (#08): https://a3152557994-ship-it.github.io/invoice-a4/ — Zero-login electronic invoice deduplication ledger & 2-up A4 reimbursement print builder.
+- **Paper-Clean** (#09): https://a3152557994-ship-it.github.io/paper-clean/ — Zero-ad local exam paper handwriting/red-mark remover & blank-space A4 print layout.
+- **Island-Prompter** (#10): https://a3152557994-ship-it.github.io/island-prompter/ — Camera-aligned Picture-in-Picture floating teleprompter with local Web Speech voice tracking.
+- **Exam-Trap Cards** (#15): https://a3152557994-ship-it.github.io/exam-trap-cards/ — 2026 civil-service & teacher exam high-frequency pitfall flashcard deck.
+- **SMB Contract Guard** (#16): https://a3152557994-ship-it.github.io/smb-contract-guard/ — Small-business contract 12 unfair-clause scanner & negotiation templates (commercial reference).
+- **Agent-ShipKit** (#17): https://a3152557994-ship-it.github.io/agent-shipkit/ — 6 production SKILL.md workflows & zero-dep monetization scripts for Claude Code / Cursor.
+- **Shopify FAQ-GEO** (#18): https://a3152557994-ship-it.github.io/shopify-faq-geo/ — Buyer review objection clustering into conversion FAQs, JSON-LD & Shopify OS 2.0 `.liquid`.
+- **Silicon-Brief** (#19): https://a3152557994-ship-it.github.io/silicon-brief/ — 3-minute bilingual AI earnings & paper unit-economics executive briefings with audio playback.
+- **BidGuard (.docx Checker)** (#20): https://a3152557994-ship-it.github.io/bid-docx-checker/ — 100% browser-local `.docx` tender disqualification auditor (RMB case mismatch, header leaks, schedule conflicts).
+
+## Order & Support
+- Email: 3152557994@qq.com / a3152557994@gmail.com
