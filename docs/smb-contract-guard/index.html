@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>小微商家合同「12大霸王条款排雷器 + 4套防坑补充协议包」｜本地隐私自检</title>
+  <meta name="description" content="专为个体户、实体档口、电商小微商家打造的商铺租赁转让、软件设计外包、达人主播带货、兼职劳务合同霸王条款秒级标红自查与商业谈判话术工具（纯浏览器本地运行，不上传合同文本；仅供商业常识参考，不构成执业律师法律意见）。" />
+  <link rel="stylesheet" href="./style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "小微商家常见合同12大霸王条款排雷器与补充协议包",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "19.90",
+      "priceCurrency": "CNY"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="disclaimer-banner" id="topDisclaimer">
+    【重要声明】本工具与补充协议模板仅供个体户/小微商家日常商业谈判常识排雷参考，不构成执业律师法律意见书；大额标的或重大纠纷请咨询执业律师。
+  </div>
+
+  <div class="container">
+    <header class="hero-bar">
+      <div>
+        <div style="font-size:12px;font-weight:800;color:#fca5a5;letter-spacing:0.04em;">🛡️ 纯本地浏览器运行 · 合同原文零上传不泄密 · 秒级标红</div>
+        <h1 class="hero-title">小微商家合同「12 大霸王条款」秒级排雷器</h1>
+        <p class="hero-sub">
+          粘贴房东、二房东、外包公司或 MCN 机构发来的合同文本，1 秒标红不对等深坑，直接复制「微信高情商谈判修改话术 + 4 套优先效力补充协议」！
+        </p>
+      </div>
+      <button type="button" class="unlock-btn" id="btnOpenUnlock">解锁全套话术 + 4份补充协议 (¥19.9)</button>
+    </header>
+
+    <div class="sample-strip">
+      <span style="font-size:12.5px;color:#94a3b8;font-weight:700;">一键载入高发踩坑合同实测：</span>
+      <div id="sampleButtons" style="display:flex;gap:8px;flex-wrap:wrap;"></div>
+    </div>
+
+    <div class="workspace-grid">
+      <section class="panel">
+        <h2 class="panel-title">
+          <span>📄 第一步：粘贴对方发来的合同条文</span>
+          <span style="font-size:11.5px;color:#94a3b8;font-weight:500;">实时本地扫描</span>
+        </h2>
+        <textarea id="contractInput" class="contract-textarea" placeholder="在此粘贴商铺租赁、软件设计外包、直播带货或兼职劳务合同全文..."></textarea>
+        <div class="action-row">
+          <button type="button" class="primary-btn" id="btnRunScan">🔍 立即扫描标红霸王条款</button>
+          <button type="button" class="secondary-btn" id="btnExportReport">📥 导出谈判修改清单 (.md)</button>
+        </div>
+
+        <h3 style="font-size:14px;margin:16px 0 6px;color:#fca5a5;">🚩 原文霸王条款自动标红预览：</h3>
+        <div id="highlightedPreview" class="highlighted-box"></div>
+      </section>
+
+      <section class="panel">
+        <h2 class="panel-title">
+          <span>⚖️ 第二步：逐条风险拆解与商业谈判替换话术</span>
+          <span style="font-size:11.5px;color:#fde68a;">免费看前 3 条完整话术</span>
+        </h2>
+        <div id="findingsContainer"></div>
+      </section>
+    </div>
+
+    <section class="templates-section">
+      <h2 style="font-size:19px;margin:0 0 6px;">📋 第三步：4 套《优先效力防坑补充协议》可打印模板</h2>
+      <p style="font-size:13px;color:#94a3b8;margin:0 0 14px;">
+        对方死活不肯改格式主合同怎么办？老生意人都用这一招：主合同照签，同步附签一页<strong>《补充协议》（明确约定“与原合同冲突之处一律以本补充协议为准”）</strong>！
+      </p>
+      <div class="tpl-grid" id="templatesGrid"></div>
+    </section>
+
+    <footer class="footer-disclaimer" id="bottomDisclaimer"></footer>
+  </div>
+
+  <div class="modal-backdrop" id="unlockModal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <h2 id="modalTitle" style="margin:0;font-size:17px;">🔓 解锁完整逐条谈判话术 + 4 套防坑补充协议</h2>
+        <button type="button" class="secondary-btn" id="btnCloseModal" style="padding:4px 10px;font-size:12px;">关闭</button>
+      </div>
+      <p style="font-size:12.5px;color:#fde68a;background:rgba(245,158,11,0.12);padding:8px 10px;border-radius:8px;margin:6px 0 10px;">
+        声明：本工具与模板包仅供商业谈判常识排雷参考，不构成执业律师法律意见书。
+      </p>
+      <p style="font-size:13px;color:#cbd5e1;margin:0 0 10px;">
+        一次性买断 <strong>¥19.9</strong>，即刻解锁全部 12 类霸王条款微信谈判话术、对等替换条文与 4 套完整可打印《防坑补充协议》：
+      </p>
+      <input id="licenseInput" class="token-input" type="text" placeholder="粘贴 OPC1.xxxx.yyyy 激活码..." autocomplete="off" />
+      <button type="button" class="primary-btn" id="btnVerifyLicense" style="width:100%;margin-bottom:8px;">本地 Ed25519 公钥验签解锁</button>
+      <div id="modalStatus" style="font-size:12px;color:#94a3b8;margin-bottom:12px;"></div>
+
+      <div style="border-top:1px solid rgba(148,163,184,0.2);padding-top:12px;font-size:12.5px;color:#cbd5e1;">
+        <div style="font-weight:700;margin-bottom:6px;">📮 自动秒发获取方式（¥19.9）：</div>
+        <div style="margin-bottom:8px;">
+          • 闲鱼 / 小红书拍下秒发完整离线工具包 + 4 套可打印协议 + <code>OPC1.</code> 激活码<br/>
+          • 邮件发码：<a href="mailto:3152557994@qq.com?subject=%E8%B4%AD%E4%B9%B0smb-contract-guard(%C2%A519.9)" style="color:#38bdf8;">3152557994@qq.com</a> / <a href="mailto:a3152557994@gmail.com?subject=%E8%B4%AD%E4%B9%B0smb-contract-guard(%C2%A519.9)" style="color:#38bdf8;">a3152557994@gmail.com</a>
+        </div>
+        <button type="button" class="secondary-btn" id="btnCopyOrder" style="width:100%;">复制下单信息</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

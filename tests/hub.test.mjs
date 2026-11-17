@@ -11,7 +11,7 @@ test("opc-tools hub contains all 16 self-serve tools and SEO/GEO files", () => {
   const slugs = [
     "agent-guard", "geo-doctor", "idphoto-kb", "store-radar-mcp",
     "edge-table-cleaner", "safari-clean-speed", "seal-pdf", "invoice-a4",
-    "paper-clean", "island-prompter", "exam-trap-cards", "smb-contract-guard",
+    "paper-clean", "island-prompter", "exam-trap-cards", "opc-tools/smb-contract-guard",
     "agent-shipkit", "shopify-faq-geo", "silicon-brief", "bid-docx-checker"
   ];
   for (const s of slugs) {

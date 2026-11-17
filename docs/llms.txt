@@ -16,7 +16,7 @@
 - **Paper-Clean** (#09): https://a3152557994-ship-it.github.io/paper-clean/ — Zero-ad local exam paper handwriting/red-mark remover & blank-space A4 print layout.
 - **Island-Prompter** (#10): https://a3152557994-ship-it.github.io/island-prompter/ — Camera-aligned Picture-in-Picture floating teleprompter with local Web Speech voice tracking.
 - **Exam-Trap Cards** (#15): https://a3152557994-ship-it.github.io/exam-trap-cards/ — 2026 civil-service & teacher exam high-frequency pitfall flashcard deck.
-- **SMB Contract Guard** (#16): https://a3152557994-ship-it.github.io/smb-contract-guard/ — Small-business contract 12 unfair-clause scanner & negotiation templates (commercial reference).
+- **SMB Contract Guard** (#16): https://a3152557994-ship-it.github.io/opc-tools/smb-contract-guard/ — Small-business contract 12 unfair-clause scanner & negotiation templates (commercial reference).
 - **Agent-ShipKit** (#17): https://a3152557994-ship-it.github.io/agent-shipkit/ — 6 production SKILL.md workflows & zero-dep monetization scripts for Claude Code / Cursor.
 - **Shopify FAQ-GEO** (#18): https://a3152557994-ship-it.github.io/shopify-faq-geo/ — Buyer review objection clustering into conversion FAQs, JSON-LD & Shopify OS 2.0 `.liquid`.
 - **Silicon-Brief** (#19): https://a3152557994-ship-it.github.io/silicon-brief/ — 3-minute bilingual AI earnings & paper unit-economics executive briefings with audio playback.
