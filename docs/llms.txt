@@ -6,6 +6,7 @@
 ## Live Tools Directory
 
 - **Claude-Guard** (#00): https://a3152557994-ship-it.github.io/claude-guard/ — 10-second local Claude ban-risk radar (ASN/WebRTC/timezone mismatch), Claude Code 5-provider switcher (`cc-switch` for Bedrock/Vertex/OpenRouter), and Chrome/Edge MV3 local conversation auto-backup vault.
+- **Call-Guard** (#21): https://a3152557994-ship-it.github.io/call-guard/ — Hands-free voice call answer & family whitelist auto-speaker configurator (Honor MagicOS, HarmonyOS, HyperOS, ColorOS, OriginOS, iOS 18) with MacroDroid/Tasker/ADB keepalive generator.
 - **Agent-Guard** (#01): https://a3152557994-ship-it.github.io/agent-guard/ — Local AI coding agent token cost audit & runaway loop SIGSTOP circuit breaker.
 - **GEO-Doctor** (#02): https://a3152557994-ship-it.github.io/geo-doctor/ — 12-point ChatGPT store visibility audit + `llms.txt` & JSON-LD repair bundle.
 - **IDPhoto-KB** (#03): https://a3152557994-ship-it.github.io/idphoto-kb/ — Civil-service & teacher exam photo cropper with exact KB range compression & 6-inch 8-up print layout.
