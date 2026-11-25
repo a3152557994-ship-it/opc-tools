@@ -26,3 +26,12 @@
 
 ## Order & Support
 - Email: 3152557994@qq.com / a3152557994@gmail.com
+
+## Native iOS & iPadOS App Store Suite (Zero Ads · 100% On-Device Privacy)
+- **PureScan (配料照妖镜)**: https://apps.apple.com/us/app/id6837347918 — Offline ingredient OCR scanner for food additives, gout purines, skincare INCI & pet food.
+- **CleanShield (净盾)**: https://apps.apple.com/us/app/id6836843272 — Declarative Safari ad/tracker blocker, 6-brand shake-ad opt-out checklist & EXIF GPS scrubber.
+- **CupSnap (贴一杯)**: https://apps.apple.com/us/app/id6837625024 — 100% free boba & coffee cutout sticker calendar with offline receipt OCR.
+- **WaitCam (等片相机)**: https://apps.apple.com/us/app/id6837624010 — 12-hour delayed disposable 35mm flash camera with Live Activity countdown & zero watermarks.
+- **FlatBill**: https://a3152557994-ship-it.github.io/flatbill/ — Lifetime buyout contractor estimate & invoice PDF maker ($19.99 once vs $220/yr).
+- **MileDeck**: https://a3152557994-ship-it.github.io/miledeck/ — 2026 IRS split-rate offline automatic mileage tracker ($14.99 once vs $120/yr).
+- **FlatShift**: https://a3152557994-ship-it.github.io/flatshift/ — Nurse & hourly shift calendar with 1.5x/2.0x overtime & night differential math ($9.99 once).
