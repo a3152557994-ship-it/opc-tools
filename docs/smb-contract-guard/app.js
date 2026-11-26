@@ -12,11 +12,15 @@ import {
 } from "./contract-scanner.js";
 
 const STORAGE_LICENSE_KEY = "opc_smb_contract_license_v1";
+const GLOBAL_WILDCARD_KEY = "opc_global_license_v1";
+const ALL_ACCESS_PRICE = "¥39 / $14.99";
 
 let isUnlocked = Boolean(globalThis.__OPC_OFFLINE_UNLOCKED__);
 let licenseEmail = isUnlocked ? "离线完整版买家" : "";
 let currentScenario = "shop_lease";
 let lastReport = null;
+let selectedPlan = "single"; // 'single' | 'all'
+let currentOrderId = "";
 
 function escapeHtml(str) {
   return String(str ?? "")
@@ -26,15 +30,28 @@ function escapeHtml(str) {
     .replace(/"/g, "&quot;");
 }
 
+function makeOrderId() {
+  const d = new Date();
+  const pad = (n) => String(n).padStart(2, "0");
+  const stamp = `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}-${pad(d.getHours())}${pad(d.getMinutes())}${pad(d.getSeconds())}`;
+  const suffix = Math.random().toString(36).slice(2, 6).toUpperCase();
+  return `SMB-${stamp}-${suffix}`;
+}
+
 async function restoreSavedLicense() {
   if (isUnlocked) return;
   try {
-    const saved = localStorage.getItem(STORAGE_LICENSE_KEY);
-    if (!saved) return;
-    const res = await verifyLicenseToken(saved, { expectedProduct: PRODUCT_SLUG });
-    if (res.valid) {
-      isUnlocked = true;
-      licenseEmail = res.payload?.e || "Pro已授权";
+    const candidates = [
+      localStorage.getItem(STORAGE_LICENSE_KEY),
+      localStorage.getItem(GLOBAL_WILDCARD_KEY),
+    ].filter(Boolean);
+    for (const saved of candidates) {
+      const res = await verifyLicenseToken(saved, { expectedProduct: PRODUCT_SLUG });
+      if (res.valid) {
+        isUnlocked = true;
+        licenseEmail = res.payload?.e || (res.payload?.p === "*" ? "全站通票VIP" : "Pro已授权");
+        return;
+      }
     }
   } catch {
     // Ignore
@@ -215,15 +232,54 @@ function renderTemplatesSection() {
   });
 }
 
+function updateModalOrderPreview() {
+  document.getElementById("planSingleBtn").classList.toggle("active", selectedPlan === "single");
+  document.getElementById("planAllBtn").classList.toggle("active", selectedPlan === "all");
+
+  const itemTitle =
+    selectedPlan === "all"
+      ? `OPC All-Access 全站 14 款微工具通票 (p="*")`
+      : `小微商家合同12大霸王条款排雷器+4套防坑补充协议包 (${PRODUCT_SLUG})`;
+  const itemPrice = selectedPlan === "all" ? ALL_ACCESS_PRICE : ORDER_CHANNELS.priceText;
+  const cmd = [
+    `【OPC 订单口令】${currentOrderId}`,
+    `【选购商品】${itemTitle}`,
+    `【订单价格】${itemPrice}`,
+    `【当前检出风险】命中 ${lastReport?.totalRedFlags ?? 0} 类霸王条款`,
+    `【发货请求】请签发对应 OPC1. 离线激活码`,
+  ].join("\n");
+
+  document.getElementById("orderCmdPreview").textContent = cmd;
+  const subject = encodeURIComponent(`[OPC 订单 ${currentOrderId}] ${itemTitle} (${itemPrice})`);
+  const body = encodeURIComponent(`${cmd}\n【接收邮箱】：`);
+  document.getElementById("fallbackMailtoBtn").href =
+    `mailto:${ORDER_CHANNELS.emailPrimary}?cc=${ORDER_CHANNELS.emailSecondary}&subject=${subject}&body=${body}`;
+}
+
 function openModal() {
+  currentOrderId = makeOrderId();
+  updateModalOrderPreview();
   document.getElementById("unlockModal").hidden = false;
   document.getElementById("modalStatus").textContent = isUnlocked
     ? `当前已解锁完整商业谈判包（授权：${licenseEmail}）`
-    : "输入 OPC1. 激活码，浏览器本地毫秒级 Ed25519 验签解锁全部逐条修改话术 + 4 套防坑补充协议下载。";
+    : "支持本工具激活码与 p=\"*\" 全站通票，浏览器本地毫秒级 Ed25519 验签。";
 }
 
 function closeModal() {
   document.getElementById("unlockModal").hidden = true;
+}
+
+async function copyTextWithFeedback(text, btn, okLabel) {
+  const prev = btn.textContent;
+  try {
+    await navigator.clipboard.writeText(text);
+    btn.textContent = okLabel;
+    setTimeout(() => {
+      btn.textContent = prev;
+    }, 1800);
+  } catch {
+    btn.textContent = text;
+  }
 }
 
 async function init() {
@@ -257,15 +313,27 @@ async function init() {
     if (e.target.id === "unlockModal") closeModal();
   });
 
+  document.getElementById("planSingleBtn").addEventListener("click", () => {
+    selectedPlan = "single";
+    updateModalOrderPreview();
+  });
+  document.getElementById("planAllBtn").addEventListener("click", () => {
+    selectedPlan = "all";
+    updateModalOrderPreview();
+  });
+
   document.getElementById("btnVerifyLicense").addEventListener("click", async () => {
     const val = document.getElementById("licenseInput").value.trim();
     const statusEl = document.getElementById("modalStatus");
     const res = await verifyLicenseToken(val, { expectedProduct: PRODUCT_SLUG });
     if (res.valid) {
       isUnlocked = true;
-      licenseEmail = res.payload?.e || "Pro用户";
+      licenseEmail = res.payload?.e || (res.payload?.p === "*" ? "全站通票VIP" : "Pro用户");
       try {
         localStorage.setItem(STORAGE_LICENSE_KEY, val);
+        if (res.payload?.p === "*") {
+          localStorage.setItem(GLOBAL_WILDCARD_KEY, val);
+        }
       } catch {}
       statusEl.style.color = "#34d399";
       statusEl.textContent = `✅ Ed25519 本地验签通过！已解锁全部谈判话术与 4 套防坑补充协议（${licenseEmail}）`;
@@ -278,12 +346,21 @@ async function init() {
     }
   });
 
-  document.getElementById("btnCopyOrder").addEventListener("click", async () => {
-    const txt = `你好，购买【小微商家合同12大霸王条款排雷器+4套防坑补充协议包 (${PRODUCT_SLUG})】完整版（${ORDER_CHANNELS.priceText}），接收邮箱：`;
-    try {
-      await navigator.clipboard.writeText(txt);
-      document.getElementById("btnCopyOrder").textContent = "✅ 已复制下单信息";
-    } catch {}
+  document.getElementById("btnCopyOrder").addEventListener("click", (e) => {
+    copyTextWithFeedback(
+      document.getElementById("orderCmdPreview").textContent,
+      e.currentTarget,
+      "✅ 已复制订单口令！发给客服 3152557994 秒领激活码"
+    );
+  });
+  document.getElementById("btnCopyQqNum").addEventListener("click", (e) => {
+    copyTextWithFeedback("3152557994", e.currentTarget, "✅ 已复制 3152557994");
+  });
+  document.getElementById("btnCopyQqMail").addEventListener("click", (e) => {
+    copyTextWithFeedback(ORDER_CHANNELS.emailPrimary, e.currentTarget, "✅ 已复制 QQ 邮箱");
+  });
+  document.getElementById("btnCopyGmail").addEventListener("click", (e) => {
+    copyTextWithFeedback(ORDER_CHANNELS.emailSecondary, e.currentTarget, "✅ 已复制 Gmail");
   });
 }
 
