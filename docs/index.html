@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OPC Micro-Tools Hub · 14 款精品在线/终端微工具 + 7 款苹果 App Store 原生软件</title>
-  <meta name="description" content="14 款开箱即用、100% 本地隐私优先的精品在线/终端微工具矩阵（覆盖 AI Agent 预算熔断、Claude 防封体检、GEO 可见度修复、标书废标排雷、证件照精准卡 KB、透明印章、发票拼版、合同霸王条款扫描、灵动岛提词器等，支持单品买断或 ¥39 / $14.99 全通码一码解锁）+ 7 款苹果 App Store 官方原生软件。" />
+  <title>OPC Micro-Tools Hub · 全站 18 款效率与防封微工具 100% 免费开放 + 7 款苹果 App Store 原生软件</title>
+  <meta name="description" content="全站 18 款开箱即用、100% 本地隐私优先的效率与防封微工具 100% 免费开放（免注册·免激活码·零云端上传，覆盖 Claude 防封体检、AI Agent 算力熔断、GEO 可见度修复、标书废标排雷、证件照精准卡 KB、透明印章、发票拼版、合同霸王条款扫描、灵动岛提词器等）+ 7 款苹果 App Store 官方原生软件，同步提供离线百宝箱转存与数创引擎工作室定制代办。" />
   <link rel="canonical" href="https://a3152557994-ship-it.github.io/opc-tools/" />
   <link rel="alternate" type="text/plain" title="LLMs Index" href="./llms.txt" />
   <script type="application/ld+json">
@@ -13,7 +13,7 @@
     "@type": "CollectionPage",
     "name": "OPC Micro-Tools Hub",
     "url": "https://a3152557994-ship-it.github.io/opc-tools/",
-    "description": "14 privacy-first local AI, developer, B2B, and document micro-utilities unlocked via one-time OPC1. Ed25519 keys (All-Access ¥39 / $14.99), plus 7 official Apple App Store native apps."
+    "description": "18 100%-free privacy-first local AI, developer, B2B, and document micro-utilities (zero registration, zero activation code, zero cloud upload), plus 7 official Apple App Store native apps and B2B custom development by ShuChuang Engine Studio."
   }
   </script>
   <style>
@@ -28,9 +28,9 @@
       --accent-hover: #2563eb;
       --green: #10b981;
       --amber: #f59e0b;
-      --danger: #f87171;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
       background: radial-gradient(circle at 50% 0%, #131c2e 0%, var(--bg) 48%);
       color: var(--ink);
@@ -51,16 +51,16 @@
     .badge {
       display: inline-block;
       font-size: 12px;
-      font-weight: 600;
-      color: #60a5fa;
-      background: rgba(59, 130, 246, 0.14);
-      border: 1px solid rgba(59, 130, 246, 0.35);
-      padding: 4px 10px;
+      font-weight: 700;
+      color: #6ee7b7;
+      background: rgba(16, 185, 129, 0.14);
+      border: 1px solid rgba(16, 185, 129, 0.38);
+      padding: 4px 11px;
       border-radius: 999px;
       margin-bottom: 10px;
     }
     h1 { font-size: 28px; letter-spacing: -0.02em; margin-bottom: 8px; }
-    .sub { color: var(--muted); max-width: 760px; font-size: 15px; }
+    .sub { color: var(--muted); max-width: 780px; font-size: 15px; }
     .header-actions {
       display: flex;
       gap: 10px;
@@ -79,40 +79,39 @@
     }
     .lang-btn:hover { border-color: #60a5fa; }
 
-    /* Web OPC1 Bundle Banner */
     .bundle-banner {
-      margin: 26px 0 20px;
+      margin: 26px 0 22px;
       padding: 22px 24px;
       border-radius: 16px;
-      background: linear-gradient(135deg, rgba(37, 99, 235, 0.24), rgba(16, 185, 129, 0.15));
-      border: 1px solid rgba(96, 165, 250, 0.45);
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(37, 99, 235, 0.2));
+      border: 1px solid rgba(16, 185, 129, 0.45);
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
       gap: 18px;
     }
-    .bundle-banner h2 { font-size: 20px; margin-bottom: 4px; }
-    .bundle-banner p { color: #cbd5e1; font-size: 14px; max-width: 740px; }
+    .bundle-banner h2 { font-size: 20px; margin-bottom: 5px; color: #ecfdf5; }
+    .bundle-banner p { color: #cbd5e1; font-size: 14px; max-width: 760px; }
     .bundle-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
 
     .btn-primary {
-      background: var(--accent);
-      color: #fff;
+      background: var(--green);
+      color: #04130d;
       text-decoration: none;
       border: none;
-      padding: 11px 20px;
+      padding: 10px 18px;
       border-radius: 10px;
-      font-weight: 700;
-      font-size: 14px;
+      font-weight: 800;
+      font-size: 13.5px;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 6px;
-      transition: background 0.15s ease;
+      transition: filter 0.15s ease;
     }
-    .btn-primary:hover { background: var(--accent-hover); }
+    .btn-primary:hover { filter: brightness(1.08); }
     .btn-secondary {
       background: rgba(255, 255, 255, 0.06);
       color: var(--ink);
@@ -129,16 +128,6 @@
       gap: 5px;
     }
     .btn-secondary:hover { border-color: #60a5fa; color: #93c5fd; }
-    .btn-emerald {
-      background: var(--green);
-      color: #04130d;
-      border: none;
-      padding: 10px 18px;
-      border-radius: 10px;
-      font-weight: 800;
-      font-size: 13.5px;
-      cursor: pointer;
-    }
 
     .section-head {
       display: flex;
@@ -186,7 +175,7 @@
       gap: 14px;
       transition: border-color 0.15s ease, transform 0.15s ease;
     }
-    .card:hover { border-color: rgba(96, 165, 250, 0.5); transform: translateY(-1px); }
+    .card:hover { border-color: rgba(16, 185, 129, 0.55); transform: translateY(-1px); }
     .card-top-meta {
       display: flex;
       justify-content: space-between;
@@ -195,7 +184,7 @@
     }
     .cat-tag {
       font-size: 11px;
-      color: var(--green);
+      color: #60a5fa;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       font-weight: 700;
@@ -220,19 +209,7 @@
       padding-top: 12px;
       border-top: 1px solid var(--line);
     }
-    .price { font-weight: 700; color: var(--amber); font-size: 13.5px; }
-    .card-actions { display: flex; align-items: center; gap: 10px; }
-    .buy-card-btn {
-      background: rgba(245, 158, 11, 0.14);
-      color: #fcd34d;
-      border: 1px solid rgba(245, 158, 11, 0.4);
-      padding: 5px 11px;
-      border-radius: 8px;
-      font-size: 12.5px;
-      font-weight: 700;
-      cursor: pointer;
-    }
-    .buy-card-btn:hover { background: rgba(245, 158, 11, 0.26); }
+    .price { font-weight: 700; color: #34d399; font-size: 13px; }
     .launch-link {
       color: #60a5fa;
       text-decoration: none;
@@ -241,9 +218,37 @@
     }
     .launch-link:hover { text-decoration: underline; }
 
+    /* 3-Way Backend Value-Add Hub */
+    .backend-hub {
+      margin-top: 36px;
+      padding: 24px;
+      border-radius: 16px;
+      background: linear-gradient(180deg, rgba(59, 130, 246, 0.1), rgba(19, 24, 34, 0.96));
+      border: 1px solid rgba(96, 165, 250, 0.4);
+    }
+    .backend-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .backend-card {
+      background: var(--card-alt);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .backend-card h3 { font-size: 16px; color: #f8fafc; margin-bottom: 6px; }
+    .backend-card p { font-size: 13px; color: #cbd5e1; }
+    .backend-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+
     /* Official Apple App Store Native Suite Zone */
     .ios-zone {
-      margin-top: 36px;
+      margin-top: 32px;
       padding: 22px 24px;
       border-radius: 16px;
       background: linear-gradient(180deg, rgba(16, 185, 129, 0.09), rgba(19, 24, 34, 0.95));
@@ -304,29 +309,6 @@
       margin-top: 4px;
     }
 
-    /* Inline Verifier */
-    .verifier {
-      margin-top: 32px;
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 22px;
-    }
-    .verifier h3 { font-size: 16px; margin-bottom: 6px; }
-    .v-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
-    .v-row input, .modal-input {
-      flex: 1;
-      min-width: 240px;
-      background: #0b0e14;
-      border: 1px solid var(--line);
-      color: var(--ink);
-      padding: 10px 12px;
-      border-radius: 8px;
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 13px;
-    }
-    .v-status { margin-top: 10px; font-size: 13px; color: var(--muted); }
-
     footer {
       margin-top: 36px;
       padding-top: 20px;
@@ -340,166 +322,106 @@
     }
     footer a { color: #93c5fd; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
-
-    /* Unified Checkout & Instant Unlock Modal */
-    .modal-backdrop {
-      position: fixed;
-      inset: 0;
-      background: rgba(3, 7, 18, 0.8);
-      backdrop-filter: blur(4px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 16px;
-      z-index: 200;
-    }
-    .modal-backdrop[hidden] { display: none !important; }
-    .modal-card {
-      width: 100%;
-      max-width: 560px;
-      max-height: 92vh;
-      overflow-y: auto;
-      background: #131926;
-      border: 1px solid rgba(96, 165, 250, 0.45);
-      border-radius: 18px;
-      padding: 22px;
-      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65);
-    }
-    .modal-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 12px;
-      margin-bottom: 14px;
-    }
-    .modal-head h3 { font-size: 18px; line-height: 1.35; }
-    .modal-close {
-      background: rgba(255, 255, 255, 0.08);
-      color: var(--ink);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 4px 10px;
-      font-size: 13px;
-      cursor: pointer;
-    }
-    .plan-switch {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 14px;
-    }
-    @media (max-width: 540px) {
-      .plan-switch { grid-template-columns: 1fr; }
-    }
-    .plan-opt {
-      text-align: left;
-      padding: 11px 13px;
-      border-radius: 12px;
-      background: var(--card-alt);
-      border: 1.5px solid var(--line);
-      color: var(--ink);
-      cursor: pointer;
-    }
-    .plan-opt.active {
-      border-color: #60a5fa;
-      background: rgba(59, 130, 246, 0.14);
-    }
-    .plan-opt strong { display: block; font-size: 13.5px; margin-bottom: 2px; }
-    .plan-opt span { font-size: 12px; color: var(--amber); font-weight: 700; }
-    .modal-step {
-      background: var(--card-alt);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 13px 14px;
-      margin-bottom: 12px;
-    }
-    .modal-step-title {
-      font-size: 13px;
-      font-weight: 800;
-      color: #93c5fd;
-      margin-bottom: 6px;
-    }
-    .order-cmd-box {
-      background: #070a10;
-      border: 1px dashed #334155;
-      border-radius: 8px;
-      padding: 10px 12px;
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 12px;
-      color: #e2e8f0;
-      white-space: pre-wrap;
-      word-break: break-word;
-      margin-bottom: 10px;
-    }
-    .contact-strip {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 8px;
-    }
-    .contact-highlight {
-      font-size: 13.5px;
-      color: #f8fafc;
-      background: rgba(16, 185, 129, 0.12);
-      border: 1px solid rgba(16, 185, 129, 0.35);
-      padding: 8px 11px;
-      border-radius: 9px;
-      margin-bottom: 8px;
-    }
-    .contact-highlight code {
-      color: #34d399;
-      font-weight: 800;
-      font-size: 14px;
-    }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
       <div>
-        <span class="badge" id="heroBadge">100% Local-First · Zero Subscription Trap · Ed25519 Offline License</span>
-        <h1 id="heroTitle">OPC 精品微工具总站（14 款在线/终端微工具 + 7 款苹果 App Store 原生软件）</h1>
-        <p class="sub" id="heroSub">拒绝包月恶意扣费、拒绝敏感文件上传云端。下方 14 款网页/CLI/插件精品工具支持免费体验核心功能，可单品永久买断，或以 ¥39 / $14.99 申领 All-Access 全通码一码解锁全部 14 款 Pro 能力。</p>
+        <span class="badge" id="heroBadge">100% Free &amp; Open · Zero Registration · Zero Cloud Upload · Local Privacy First</span>
+        <h1 id="heroTitle">OPC 精品微工具总站（18 款在线/终端微工具 100% 免费开放 + 7 款苹果 App Store 原生软件）</h1>
+        <p class="sub" id="heroSub">不要收费把人拒之门外！下方全部 18 款网页、浏览器插件与终端微工具已彻底拆除付费锁与激活码门槛，完整导出、无水印下载、全量规则核验 100% 免费直用；如需离线百宝箱转存或企业私有化定制，请见下方合作专区。</p>
       </div>
       <div class="header-actions">
-        <button class="btn-secondary" id="headerUnlockBtn" type="button">🔑 激活码解锁 / 客服</button>
+        <a class="btn-secondary" href="#custom-service" id="headerCustomBtn">🏢 定制合作 / 工作室联系</a>
         <button class="lang-btn" id="langBtn" type="button">EN / 中文</button>
       </div>
     </header>
 
-    <section class="bundle-banner">
+    <section class="bundle-banner" id="freeBanner">
       <div>
-        <h2 id="bundleTitle">All-Access 全站通票：¥39 / $14.99 一次性买断全部 14 款网页/终端工具</h2>
-        <p id="bundleDesc">签发一枚 <code>p="*"</code> 全通型 Ed25519 激活码（<code>OPC1.</code>），在下方全部 14 款网页、浏览器插件与 CLI/MCP 工具中输入同一枚激活码即可永久解锁 Pro 功能（注：不含下方苹果 App Store 独立原生软件）。</p>
+        <h2 id="bundleTitle">🎉 全站 18 款效率与防封微工具 100% 免费开放（免注册·免激活码·纯本地隐私）</h2>
+        <p id="bundleDesc">零登录、零云端上传、零水印拦截——点开任意子工具即可免费使用全部高级导出、批量清洗、全量规则审查与离线配置包下载功能。</p>
       </div>
       <div class="bundle-actions">
-        <button class="btn-primary" id="buyBundleBtn" type="button">立即申领全通码 (¥39 / $14.99) →</button>
+        <a class="btn-primary" href="#vault-pack" id="claimVaultBtn">📥 免费领离线百宝箱 →</a>
+        <a class="btn-secondary" href="#custom-service" id="contactStudioBtn">🛠️ 预约 1v1 代配 / 企业定制</a>
       </div>
     </section>
 
     <div class="section-head">
-      <h2 id="webZoneTitle">🛠️ 14 款精品在线 / 终端微工具（支持 OPC1. 激活码一码通用）</h2>
+      <h2 id="webZoneTitle">🛠️ 18 款精品在线 / 终端微工具（100% 免费免码全解锁）</h2>
       <span id="webZoneSub">100% 浏览器本地或本机终端运行 · 零云端上传</span>
     </div>
 
     <div class="filters" id="filterBar">
-      <button class="chip active" data-cat="all" type="button">全部 (14)</button>
-      <button class="chip" data-cat="dev" type="button">开发者与 AI Agent (4)</button>
+      <button class="chip active" data-cat="all" type="button">全部 (18)</button>
+      <button class="chip" data-cat="dev" type="button">开发者与 AI Agent (5)</button>
       <button class="chip" data-cat="b2b" type="button">跨境电商与 B2B 排雷 (3)</button>
-      <button class="chip" data-cat="doc" type="button">办公印章·发票·合同·表格 (4)</button>
-      <button class="chip" data-cat="life" type="button">考公证件·口播·声控免提 (3)</button>
+      <button class="chip" data-cat="doc" type="button">办公印章·发票·合同·论文 (5)</button>
+      <button class="chip" data-cat="life" type="button">考公证件·口播·声控净化 (5)</button>
     </div>
 
     <main class="grid" id="toolGrid"></main>
+
+    <!-- 3-Way Backend Value-Add Hub -->
+    <section class="backend-hub" id="backendHub">
+      <div>
+        <span class="badge" style="margin-bottom:6px;">可持续发展 · 三路后端增值服务</span>
+        <h2 id="backendTitle" style="font-size:20px;margin-bottom:4px;">软件本体永远免费不拦人 · 离线资源包 / 企业定制 / 严选云设施支持</h2>
+        <p id="backendSub" style="font-size:13.5px;color:#cbd5e1;">把好用的工具 100% 免费交给大家，我们仅通过离线资料网盘整理、企业/个人省心代办定制与严选基础设施返佣维持长期研发更新：</p>
+      </div>
+
+      <div class="backend-grid">
+        <div class="backend-card" id="vault-pack">
+          <div>
+            <h3>📥 1. 离线百宝箱一键转存（网盘拉新通道）</h3>
+            <p>一键打包领取全站离线单文件工具合集、2026 Claude 防封实战全书（PDF/EPUB）、零断流 5 源切换脚本、6 套商业 Agent 技能包、4 套防坑补充协议与老年机免手接配置包。</p>
+          </div>
+          <div class="backend-actions">
+            <a class="btn-primary" href="https://a3152557994-ship-it.github.io/claude-guard/downloads/claude-code-kit.zip">直下防封脚本包 (.zip)</a>
+            <a class="btn-secondary" href="https://a3152557994-ship-it.github.io/agent-shipkit/downloads/agent-shipkit-full.zip">直下 6 套 Agent 技能包</a>
+            <a class="btn-secondary" href="mailto:3152557994@qq.com?cc=a3152557994@gmail.com&subject=%5B%E5%85%8D%E8%B4%B9%E9%A2%86%E7%99%BE%E5%AE%9D%E7%AE%B1%5D%20%E8%AF%B7%E5%8F%91%E5%A4%B8%E5%85%8B%2F%E7%BD%91%E7%9B%98%E5%85%A8%E5%A5%97%E7%A6%BB%E7%BA%BF%E5%B7%A5%E5%85%B7%E5%8C%85">邮件秒领夸克网盘全集</a>
+          </div>
+        </div>
+
+        <div class="backend-card" id="custom-service">
+          <div>
+            <h3>🏢 2. 企业/个人省心定制代办（B2B 现金流通道）</h3>
+            <p><strong>数创引擎工作室</strong>官方承接：招投标标书审查规则私有化定制、行业合同风控定制、Shopify/GEO 代部署、三端小程序 / 苹果原生 App / 自动化脚本定做，以及 AWS Bedrock / 老年机 1v1 远程无损代配。</p>
+            <p style="margin-top:8px;font-size:12.5px;color:#93c5fd;">
+              官方邮箱：<code>3152557994@qq.com</code>（海外 <code>a3152557994@gmail.com</code>）<br/>
+              合作微信 / QQ 同号：<code>3152557994</code>
+            </p>
+          </div>
+          <div class="backend-actions">
+            <button type="button" class="btn-primary" id="copyQqMailBtn">复制官方邮箱</button>
+            <button type="button" class="btn-secondary" id="copyQqNumBtn">复制微信/QQ 3152557994</button>
+            <a class="btn-secondary" href="mailto:3152557994@qq.com?cc=a3152557994@gmail.com&subject=%5B%E6%95%B0%E5%88%9B%E5%BC%95%E6%93%8E%E5%B7%A5%E4%BD%9C%E5%AE%A4%5D%20%E4%BC%81%E4%B8%9A%E5%AE%9A%E5%88%B6%2F1v1%E8%BF%9C%E7%A8%8B%E4%BB%A3%E9%85%8D%E5%92%A8%E8%AF%A2">✉️ 发送定制需求</a>
+          </div>
+        </div>
+
+        <div class="backend-card" id="infra-sponsor">
+          <div>
+            <h3>☁️ 3. 严选开发者基础设施推荐 &amp; 开源赞赏</h3>
+            <p>精选 AWS Bedrock / Google Vertex AI 合规防封云赠金申请指引、纯净静态住宅原生 ISP 避坑测评，以及 GitHub 开源仓库 Star / 社区自愿赞赏通道。</p>
+          </div>
+          <div class="backend-actions">
+            <a class="btn-secondary" href="https://a3152557994-ship-it.github.io/claude-guard/#guides" target="_blank" rel="noopener">☁️ 合规云与静态住宅网络指南 →</a>
+            <a class="btn-secondary" href="https://github.com/a3152557994-ship-it" target="_blank" rel="noopener">⭐ GitHub 开源矩阵与赞赏</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- IOS-FLAGSHIPS-START -->
     <section class="ios-zone" id="iosNativeZone">
       <div class="ios-zone-header">
         <h2 class="ios-zone-title" id="iosZoneTitle">📱 苹果 App Store 官方原生软件（7 款独立 iOS / iPadOS / macOS 原生应用）</h2>
-        <span class="ios-sep-badge" id="iosZoneBadge">通过苹果 App Store 官方下载与内购 · 独立于网页 OPC1. 激活码体系</span>
+        <span class="ios-sep-badge" id="iosZoneBadge">通过苹果 App Store 官方下载与内购 · 独立于上方免费网页微工具矩阵</span>
       </div>
       <p class="ios-zone-desc" id="iosZoneDesc">
-        以下 7 款为纯正 Swift 原生开发的零广告离线软件，严格通过 Apple App Store 官方渠道下载与内购（不适用、亦无需网页 <code>OPC1.</code> 激活码）：
+        以下 7 款为纯正 Swift 原生开发的零广告离线软件，严格通过 Apple App Store 官方渠道下载与内购（与上方 18 款免费网页/CLI 微工具相互独立）：
       </p>
       <div class="ios-grid" id="iosGrid">
         <a class="ios-card" href="https://a3152557994-ship-it.github.io/clean-shield/" target="_blank" rel="noopener">
@@ -541,19 +463,9 @@
     </section>
     <!-- IOS-FLAGSHIPS-END -->
 
-    <section class="verifier" id="verifierSection">
-      <h3 id="verifierTitle">OPC1. 激活码真伪与权限在线核验器（浏览器本地 WebCrypto Ed25519）</h3>
-      <p id="verifierDesc" style="font-size:13px;color:var(--muted);">支持核验 14 款网页/终端工具单品激活码与 <code>*</code> 全站通票（¥39 / $14.99），核验通过后自动保存在本机浏览器，全程零网络请求。</p>
-      <div class="v-row">
-        <input id="keyInput" type="text" placeholder="粘贴 OPC1.xxx.yyy 激活码..." autocomplete="off" />
-        <button class="btn-primary" id="verifyBtn" type="button">立即核验并保存</button>
-      </div>
-      <div class="v-status" id="verifyOut">等待输入激活码。</div>
-    </section>
-
     <footer>
       <div>
-        <strong>OPC Micro-Tools Hub</strong> · 客服 QQ / 微信同号：<code>3152557994</code> · 邮箱：<code>3152557994@qq.com</code> / <code>a3152557994@gmail.com</code>
+        <strong>OPC Micro-Tools Hub · 数创引擎工作室</strong> · 合作微信 / QQ 同号：<code>3152557994</code> · 官方邮箱：<code>3152557994@qq.com</code> / <code>a3152557994@gmail.com</code>
       </div>
       <div style="display:flex;gap:14px;flex-wrap:wrap;">
         <a href="./llms.txt">llms.txt</a>
@@ -563,186 +475,40 @@
     </footer>
   </div>
 
-  <!-- Unified Checkout & Instant Ed25519 Unlock Modal -->
-  <div class="modal-backdrop" id="checkoutModal" hidden>
-    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
-      <div class="modal-head">
-        <div>
-          <h3 id="checkoutTitle">统一收银台 · 申领或验签 OPC1. 激活码</h3>
-          <p id="checkoutSub" style="font-size:12.5px;color:var(--muted);margin-top:2px;">零包月陷阱 · 浏览器本地 Ed25519 公钥离线秒验</p>
-        </div>
-        <button type="button" class="modal-close" id="closeCheckoutBtn">✕ 关闭</button>
-      </div>
-
-      <div class="plan-switch" id="planSwitch">
-        <button type="button" class="plan-opt active" id="optBundle" data-mode="bundle">
-          <strong id="optBundleTitle">🔥 All-Access 全站 14 款通票 (p="*")</strong>
-          <span id="optBundlePrice">¥39 / $14.99 永久买断（立省 85%+）</span>
-        </button>
-        <button type="button" class="plan-opt" id="optSingle" data-mode="single">
-          <strong id="optSingleTitle">单品独立授权</strong>
-          <span id="optSinglePrice">按单品买断价</span>
-        </button>
-      </div>
-
-      <div class="modal-step">
-        <div class="modal-step-title" id="step1Title">① 一键复制订单口令（含商品、价格与专属单号）</div>
-        <div class="order-cmd-box" id="orderCmdBox"></div>
-        <button type="button" class="btn-primary" id="copyOrderCmdBtn" style="width:100%;">📋 一键复制订单口令</button>
-      </div>
-
-      <div class="modal-step">
-        <div class="modal-step-title" id="step2Title">② 客服快速通道（发送上方口令，秒发 OPC1. 激活码）</div>
-        <div class="contact-highlight" id="contactHighlight">
-          客服 QQ / 微信同号：<code>3152557994</code> ｜ QQ 邮箱：<code>3152557994@qq.com</code>
-        </div>
-        <div class="contact-strip">
-          <button type="button" class="btn-secondary" id="copyQqNumBtn">复制客服 QQ/微信：3152557994</button>
-          <button type="button" class="btn-secondary" id="copyQqMailBtn">复制 QQ 邮箱</button>
-          <button type="button" class="btn-secondary" id="copyGmailBtn">复制 Gmail</button>
-          <a class="btn-secondary" id="fallbackMailtoLink" href="mailto:3152557994@qq.com?cc=a3152557994@gmail.com&subject=%5BOPC%20All-Access%5D%20%E7%94%B3%E9%A2%8614%E6%AC%BE%E5%85%A8%E9%80%9A%E7%A0%81%20(%C2%A539%2F%2414.99)">✉️ 备用：打开邮件客户端</a>
-        </div>
-      </div>
-
-      <div class="modal-step" style="margin-bottom:0;">
-        <div class="modal-step-title" id="step3Title">③ 已购 OPC1. 激活码？在此当场验签秒解锁</div>
-        <div class="v-row" style="margin-top:6px;">
-          <input id="modalKeyInput" class="modal-input" type="text" placeholder="粘贴 OPC1.xxxx.yyyy 激活码..." autocomplete="off" />
-          <button type="button" class="btn-emerald" id="modalVerifyBtn">当场验签解锁</button>
-        </div>
-        <div class="v-status" id="modalVerifyOut">支持单品激活码与 p="*" 全站通票，验签通过后立即写入本机并同步解锁对应子工具。</div>
-      </div>
-    </div>
-  </div>
-
   <script type="module">
     export const PUBLIC_SPKI_BASE64 = "MCowBQYDK2VwAyEAP5NCVP7CT0tgaGLSGMe4r87SjYRWTM6gN6igBZYSXys=";
-    export const ALL_ACCESS_PRICE = "¥39 / $14.99";
 
     export const TOOLS = [
-      { id: "00", slug: "claude-guard", licenseSlug: "claude-guard", cat: "dev", zh: "Claude Guard · 封号风险10秒体检 + 5源切换 + 自动防丢备份", en: "Claude Guard · Ban-Risk Radar, Bedrock Switcher & MV3 Vault", descZh: "纯本地检测机房ASN/时区错位/WebRTC穿透，一键生成Claude Code防遥测与Bedrock配置，附MV3对话自动本地备份插件。", descEn: "10-sec local ban-risk radar, Claude Code 5-source switcher & MV3 chat auto-backup vault.", price: "Free + ¥15/$4.99 Pro" },
-      { id: "21", slug: "call-guard", licenseSlug: "call-guard", cat: "life", zh: "免手接 CallGuard · 手机声控免提 & 亲情白名单自动接听配置台", en: "CallGuard · Hands-Free Voice & Family Whitelist Speaker Configurator", descZh: "查荣耀Magic6/华为/小米/OV/iPhone隐藏声控接听开关，一键生成仅家人白名单3秒自动免提、微信语音免提与摇晃挂断配置包。", descEn: "Unlock hidden voice-answer & generate family-whitelist auto-speaker + shake-to-hangup rules.", price: "Free + ¥15 Pro" },
-      { id: "01", slug: "agent-guard", licenseSlug: "agent-guard", cat: "dev", zh: "Agent-Guard · AI 算力透视与死循环熔断器", en: "Agent-Guard · Token X-Ray & Loop Breaker", descZh: "扫描 Claude Code / Codex 会话成本热力图，自动拦截死循环白烧 API。", descEn: "Local token audit & automatic SIGSTOP circuit breaker for runaway coding agents.", price: "$19 / ¥49" },
-      { id: "02", slug: "geo-doctor", licenseSlug: "geo-doctor", cat: "b2b", zh: "GEO-Doctor · ChatGPT 商铺可见度体检与修复包", en: "GEO-Doctor · AI Search Visibility & llms.txt Kit", descZh: "12 项 AI 搜索推荐度评分，一键生成专属 llms.txt 与零报错 JSON-LD。", descEn: "12-point ChatGPT visibility audit + instant llms.txt & Schema repair bundle.", price: "$29 / ¥99" },
-      { id: "03", slug: "idphoto-kb", licenseSlug: "idphoto-kb", cat: "life", zh: "公考教资证件照裁剪与精准卡 KB 压缩器", en: "IDPhoto-KB · Exact KB Exam Photo Compressor", descZh: "295×413px 精准锁定 15–28KB 区间，纯前端防穿洞换底 + 6寸8连冲印排版。", descEn: "100% local exam ID photo cropper, background swapper & exact KB solver.", price: "Free + ¥9.9 Pro" },
-      { id: "04", slug: "store-radar-mcp", licenseSlug: "store-radar-mcp", cat: "dev", zh: "Store-Radar MCP · App Store 差评聚类与竞品雷达", en: "Store-Radar MCP · App Store Pain-Point Miner", descZh: "在 Cursor / Claude Code 内直查同行定价与 1–3 星差评高频切口生成作战卡。", descEn: "Standard stdio MCP server mining App Store 1-3 star reviews into battlecards.", price: "$19 / ¥68" },
-      { id: "05", slug: "edge-table-cleaner", licenseSlug: "edge-table-cleaner", cat: "doc", zh: "网页复杂表格一键清洗转标准 Excel 插件", en: "Edge Table Cleaner · HTML Table to Clean XLSX", descZh: "展开跨行跨列合并单元格、剥离千分位与货币符、跨分页纵向合并零上传导出。", descEn: "Unmerge complex rowspan/colspan DOM tables into clean XLSX/CSV offline.", price: "¥19 / $9.9" },
-      { id: "07", slug: "seal-pdf", licenseSlug: "seal-pdf", cat: "doc", zh: "真透明底手写签字抠图与合同骑缝章工具", en: "Seal-PDF · Transparent Signature & Straddle Stamp", descZh: "纸面实拍签名秒变真 Alpha 透明 PNG，支持合同拖拽盖章与多页骑缝章自动切分。", descEn: "Local adaptive alpha signature extraction & multi-page straddle stamp splitter.", price: "¥15 买断" },
-      { id: "08", slug: "invoice-a4", licenseSlug: "invoice-a4", cat: "doc", zh: "电子发票唯一号查重台账与 A4 一页两张报销拼版", en: "Invoice-A4 · Dedup Ledger & 2-Up A4 Print Builder", descZh: "免登录零上传，20位全电发票精准防重排雷，一键出财务台账与上下两联省纸打印版。", descEn: "Zero-login invoice deduplication ledger & 2-per-page A4 reimbursement sheet.", price: "¥18 买断" },
-      { id: "10", slug: "island-prompter", licenseSlug: "island-prompter", cat: "life", zh: "贴紧灵动岛防飘眼悬浮提词器 + 真画中画跟读", en: "Island-Prompter · Camera-Line PiP Voice Teleprompter", descZh: "顶边锁死眼神防乱飘，原生画中画悬浮在任意相机/直播软件上方，本地语音跟读。", descEn: "Floating Picture-in-Picture teleprompter with local Web Speech voice tracking.", price: "¥12 买断" },
-      { id: "16", slug: "opc-tools/smb-contract-guard", licenseSlug: "smb-contract-guard", cat: "doc", zh: "小微商家租赁/外包/带货合同 12 大霸王条款排雷器", en: "SMB Contract Guard · 12 Unfair Clause Scanner", descZh: "粘贴合同秒级标红不对等陷阱条款并给出商业谈判替换话术 + 4套补充协议模板。", descEn: "Local contract unfair-clause highlighter + negotiation rewrites (non-legal ref).", price: "¥19.9 买断" },
-      { id: "17", slug: "agent-shipkit", licenseSlug: "agent-shipkit", cat: "dev", zh: "Agent-ShipKit · Claude/Cursor 商业变现 6 套技能包", en: "Agent-ShipKit · 6 Revenue-Ready Agent Skills", descZh: "含差评挖掘、零服务端 Ed25519 付费墙、GEO 生成与冷启动宣发全套可执行工程脚本。", descEn: "6 production SKILL.md workflows + zero-dep CLI scripts for solo founders.", price: "$29 / ¥99" },
-      { id: "18", slug: "shopify-faq-geo", licenseSlug: "shopify-faq-geo", cat: "b2b", zh: "Shopify 买家差评疑虑转动态 FAQ + Liquid 组件注入器", en: "Shopify FAQ-GEO · Review Objection to Liquid & Schema", descZh: "聚类评论 6 大购买阻力，直出高转化消除顾虑 Q&A、FAQPage Schema 与 .liquid 模块。", descEn: "Turn raw product reviews into conversion FAQs, JSON-LD & Shopify OS 2.0 Liquid.", price: "$29 / ¥99" },
-      { id: "20", slug: "bid-docx-checker", licenseSlug: "bid-docx-checker", cat: "b2b", zh: "标书排雷王 · 招投标 .docx 废标项纯本地交叉核验器", en: "BidGuard · Offline .docx Tender Disqualification Checker", descZh: "断网内存解压 .docx，精准抓出大小写金额分位差错、页眉串名、工期冲突与漏填项。", descEn: "100% browser-local .docx parser catching RMB amount mismatches & header leaks.", price: "¥19.9 单次 / ¥59 买断" }
+      { id: "00", slug: "claude-guard", cat: "dev", zh: "Claude Guard · 封号风险10秒体检 + 5源切换 + 无限防丢备份", en: "Claude Guard · Ban-Risk Radar, Bedrock Switcher & MV3 Vault", descZh: "纯本地检测机房ASN/时区错位/WebRTC穿透，一键生成Claude Code防遥测与Bedrock配置，附MV3无限对话本地加密备份插件。", descEn: "10-sec local ban-risk radar, Claude Code 5-source switcher & unlimited MV3 chat backup vault.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "21", slug: "call-guard", cat: "life", zh: "免手接 CallGuard · 手机声控免提 & 亲情白名单自动接听配置台", en: "CallGuard · Hands-Free Voice & Family Whitelist Speaker Configurator", descZh: "查荣耀Magic6/华为/小米/OV/iPhone隐藏声控接听开关，免费直出家人白名单自动免提、微信语音免提与摇晃挂断完整配置包。", descEn: "Unlock hidden voice-answer & download full family-whitelist auto-speaker + shake-to-hangup kit free.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "01", slug: "agent-guard", cat: "dev", zh: "Agent-Guard · AI 算力透视与死循环自动熔断器", en: "Agent-Guard · Token X-Ray & Loop Circuit Breaker", descZh: "零依赖扫描 Claude Code / Codex / Antigravity 会话成本热力图，免费开启 watch 自动 SIGSTOP 拦截死循环。", descEn: "Zero-dep local token audit & automated SIGSTOP circuit breaker for runaway coding agents.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "02", slug: "geo-doctor", cat: "b2b", zh: "GEO-Doctor · ChatGPT 商铺可见度体检与一键修复包", en: "GEO-Doctor · AI Search Visibility & llms.txt Repair Kit", descZh: "12 项 AI 搜索推荐度评分，免费下载完整专属 llms.txt、robots.txt 与零报错 JSON-LD 修复包（另供人工代部署）。", descEn: "12-point ChatGPT visibility audit + free instant llms.txt & Schema repair bundle.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "03", slug: "idphoto-kb", cat: "life", zh: "公考教资证件照裁剪与精准卡 KB 压缩器", en: "IDPhoto-KB · Exact KB Exam Photo Compressor", descZh: "295×413px 精准锁定 15–28KB 区间，纯前端防穿洞换底 + 6寸8连冲印排版高清无水印免费直出。", descEn: "100% local exam ID photo cropper, background swapper & watermark-free 8-up print layout.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "04", slug: "store-radar-mcp", cat: "dev", zh: "Store-Radar MCP · App Store 差评聚类与竞品作战卡雷达", en: "Store-Radar MCP · App Store Pain-Point & Battlecard Server", descZh: "在 Cursor / Claude Code 内免费全量直查双区定价、差评高频切口、多品矩阵对比与 Markdown 作战卡。", descEn: "100% free stdio & HTTP MCP server mining App Store 1-3 star reviews into full battlecards.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "05", slug: "edge-table-cleaner", cat: "doc", zh: "网页复杂表格一键清洗转标准 Excel 工具与插件", en: "Edge Table Cleaner · HTML Table to Clean XLSX", descZh: "展开跨行跨列合并单元格、剥离千分位与货币符、跨分页多表纵向合并零上传免费无限导出。", descEn: "Unmerge complex rowspan/colspan DOM tables & multi-page tables into clean XLSX/CSV free.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "07", slug: "seal-pdf", cat: "doc", zh: "真透明底手写签字抠图与合同骑缝章工具", en: "Seal-PDF · Transparent Signature & Straddle Stamp", descZh: "纸面实拍签名秒变真 Alpha 高清无水印透明 PNG，支持合同拖拽盖章与多页骑缝章自动切分免费导出。", descEn: "Watermark-free adaptive alpha signature extraction & multi-page straddle stamp splitter.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "08", slug: "invoice-a4", cat: "doc", zh: "电子发票唯一号查重台账与 A4 一页两张报销拼版", en: "Invoice-A4 · Dedup Ledger & 2-Up A4 Print Builder", descZh: "免登录零上传，20位全电发票无限张数精准防重排雷，一键免费导出财务台账与省纸双联打印版。", descEn: "Unlimited zero-login invoice deduplication ledger & 2-per-page A4 reimbursement sheet.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "10", slug: "island-prompter", cat: "life", zh: "贴紧灵动岛防飘眼悬浮提词器 + 真画中画跟读", en: "Island-Prompter · Camera-Line PiP Voice Teleprompter", descZh: "顶边锁死眼神防乱飘，原生画中画无限时长悬浮在任意相机/直播软件上方，支持本地语音跟读与镜像。", descEn: "Unlimited floating Picture-in-Picture teleprompter with local Web Speech voice tracking.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "16", slug: "opc-tools/smb-contract-guard", cat: "doc", zh: "小微商家租赁/外包/带货合同 12 大霸王条款排雷器", en: "SMB Contract Guard · 12 Unfair Clause Scanner", descZh: "粘贴合同秒级标红不对等陷阱条款，免费查看全部 12 类微信商业谈判话术并下载 4 套优先效力补充协议。", descEn: "100% free local contract unfair-clause highlighter + all negotiation rewrites & 4 templates.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "17", slug: "agent-shipkit", cat: "dev", zh: "Agent-ShipKit · Claude/Cursor 独立开发实战 6 套技能包", en: "Agent-ShipKit · 6 Production Agent Skills & CLI Kit", descZh: "全套 6 个 SKILL.md 工作流与零依赖 CLI 工程脚本（差评挖掘、GEO 生成、定价架构、冷启动宣发）免费打包直下。", descEn: "All 6 production SKILL.md workflows + zero-dep CLI scripts downloadable in full ZIP for free.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "18", slug: "shopify-faq-geo", cat: "b2b", zh: "Shopify 买家差评疑虑转动态 FAQ + 多语种 Liquid 注入器", en: "Shopify FAQ-GEO · Review Objection to Liquid & Schema", descZh: "聚类评论 6 大购买阻力，免费直出英/美/德/日四语种消除顾虑 Q&A、FAQPage Schema 与 OS 2.0 .liquid 组件。", descEn: "Free EN/DE/JP conversion FAQs, JSON-LD & Shopify OS 2.0 Liquid generator from raw reviews.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "20", slug: "bid-docx-checker", cat: "b2b", zh: "标书排雷王 · 招投标 .docx 废标项纯本地交叉核验器", en: "BidGuard · Offline .docx Tender Disqualification Checker", descZh: "断网内存解压 .docx，免费全量抓出大小写金额分位差错、页眉串名、工期冲突与漏填项并导出整改清单。", descEn: "100% free browser-local .docx parser catching all RMB amount mismatches, header leaks & conflicts.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "11", slug: "paper-clean", cat: "doc", zh: "PaperClean · 毕业论文/公文 AI 痕迹清洗与国标排版一键净版", en: "PaperClean · Thesis & Official Doc Format Sanitizer", descZh: "纯本地清除 Markdown 星号残留、隐形零宽字符与中英文混排乱距，免费无限字数导出标准排版纯文本。", descEn: "100% free unlimited local sanitizer removing AI Markdown artifacts, zero-width chars & spacing bugs.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "12", slug: "exam-trap-cards", cat: "life", zh: "公考事业编行测申论「高频命题人陷阱」速刷闪卡库", en: "Exam Trap Cards · Civil-Service High-Frequency Trap Deck", descZh: "免费全开全量高频偷换概念、绝对化表述与时间线陷阱闪卡，支持错题收藏与考前冲刺离线背诵导出。", descEn: "Full unlocked civil-service exam trap flashcards with offline review & mistake deck export.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "14", slug: "silicon-brief", cat: "dev", zh: "Silicon Brief · 硅谷 AI 创投与开源趋势双语极速内参", en: "Silicon Brief · Bilingual AI & Indie Hacker Intelligence", descZh: "聚合 HN / GitHub Trending / 产品变现拆解信号，支持全量存档检索、Markdown 简报导出与 RSS 订阅。", descEn: "Full bilingual AI founder signal feed with archive search, Markdown export & RSS.", priceZh: "¥0 免费全开", priceEn: "100% Free" },
+      { id: "15", slug: "safari-clean-speed", cat: "life", zh: "Safari 网页清爽净化与全网视频任意倍速脚本生成器", en: "Safari Clean & Speed · Userscript & Rule Customizer", descZh: "免装臃肿插件，一键免费定制 iOS/macOS Safari 去弹窗横幅、解除复制限制与 0.5x–16x 快捷键倍速脚本。", descEn: "Free custom iOS/macOS Safari userscript builder for clean reading, copy unlock & video speed.", priceZh: "¥0 免费全开", priceEn: "100% Free" }
     ];
 
     const CAT_META = [
-      { id: "all", zh: "全部", en: "All Tools" },
+      { id: "all", zh: "全部", en: "All Free Tools" },
       { id: "dev", zh: "开发者与 AI Agent", en: "Dev & AI Agents" },
       { id: "b2b", zh: "跨境电商与 B2B 排雷", en: "E-Commerce & B2B" },
-      { id: "doc", zh: "办公印章·发票·合同·表格", en: "Docs · Stamp · Invoice · Contract" },
-      { id: "life", zh: "考公证件·口播·声控免提", en: "Exam ID · Prompter · Voice" }
+      { id: "doc", zh: "办公印章·发票·合同·论文", en: "Docs · Stamp · Invoice · Contract" },
+      { id: "life", zh: "考公证件·口播·声控净化", en: "Exam ID · Prompter · Voice" }
     ];
-
-    const SUBSITE_STORAGE_KEYS = {
-      "smb-contract-guard": "opc_smb_contract_license_v1",
-      "geo-doctor": "geo_doctor_opc1_token_v1",
-      "idphoto-kb": "idphoto_kb_opc_license_v1",
-      "island-prompter": "opc_license_island_prompter_v1",
-      "shopify-faq-geo": "opc_license_shopify_faq_geo_v1"
-    };
-
-    const HUB_STORAGE_KEY = "opc_hub_verified_tokens_v1";
-    const GLOBAL_WILDCARD_KEY = "opc_global_license_v1";
 
     let lang = "zh";
     let activeCat = "all";
-    let selectedTool = null; // null => bundle, or tool object
-    let checkoutMode = "bundle"; // 'bundle' | 'single'
-    let currentOrderId = "";
-    let unlockedSlugs = new Set(); // '*' or specific licenseSlug
-
-    function b64UrlToBytes(s) {
-      const pad = s.replace(/-/g, "+").replace(/_/g, "/") + "===".slice((s.length + 3) % 4);
-      const bin = atob(pad);
-      return Uint8Array.from(bin, c => c.charCodeAt(0));
-    }
-
-    async function verifyOpcToken(rawToken) {
-      const raw = String(rawToken || "").trim();
-      const parts = raw.split(".");
-      if (parts.length !== 3 || parts[0] !== "OPC1" || !parts[1] || !parts[2]) {
-        return { valid: false, message: lang === "zh" ? "格式无效：激活码应以 OPC1. 开头并包含三段。" : "Invalid format: expected OPC1.<payload>.<signature>." };
-      }
-      try {
-        const spki = Uint8Array.from(atob(PUBLIC_SPKI_BASE64), c => c.charCodeAt(0));
-        const pubKey = await crypto.subtle.importKey("spki", spki, { name: "Ed25519" }, false, ["verify"]);
-        const ok = await crypto.subtle.verify(
-          "Ed25519",
-          pubKey,
-          b64UrlToBytes(parts[2]),
-          new TextEncoder().encode(`OPC1.${parts[1]}`)
-        );
-        if (!ok) {
-          return { valid: false, message: lang === "zh" ? "验签失败：数字签名不匹配或已被篡改。" : "Signature verification failed." };
-        }
-        const payload = JSON.parse(new TextDecoder().decode(b64UrlToBytes(parts[1])));
-        const nowSec = Math.floor(Date.now() / 1000);
-        if (payload.exp && Number(payload.exp) > 0 && nowSec > Number(payload.exp)) {
-          return { valid: false, message: lang === "zh" ? "激活码已过期。" : "License token has expired." };
-        }
-        return { valid: true, payload, token: raw };
-      } catch (err) {
-        return { valid: false, message: (lang === "zh" ? "核验异常：" : "Verify error: ") + err.message };
-      }
-    }
-
-    function persistVerifiedLicense(payload, rawToken) {
-      try {
-        const map = JSON.parse(localStorage.getItem(HUB_STORAGE_KEY) || "{}");
-        map[payload.p || "*"] = rawToken;
-        localStorage.setItem(HUB_STORAGE_KEY, JSON.stringify(map));
-
-        if (payload.p === "*") {
-          localStorage.setItem(GLOBAL_WILDCARD_KEY, rawToken);
-          Object.values(SUBSITE_STORAGE_KEYS).forEach(k => localStorage.setItem(k, rawToken));
-          unlockedSlugs.add("*");
-        } else if (payload.p) {
-          unlockedSlugs.add(payload.p);
-          if (SUBSITE_STORAGE_KEYS[payload.p]) {
-            localStorage.setItem(SUBSITE_STORAGE_KEYS[payload.p], rawToken);
-          }
-        }
-      } catch {
-        // Ignore storage errors in private browsing
-      }
-    }
-
-    async function restoreSavedTokens() {
-      try {
-        const candidates = new Set();
-        const globalTok = localStorage.getItem(GLOBAL_WILDCARD_KEY);
-        if (globalTok) candidates.add(globalTok);
-        const savedMap = JSON.parse(localStorage.getItem(HUB_STORAGE_KEY) || "{}");
-        Object.values(savedMap).forEach(t => { if (t) candidates.add(t); });
-        Object.values(SUBSITE_STORAGE_KEYS).forEach(k => {
-          const v = localStorage.getItem(k);
-          if (v) candidates.add(v);
-        });
-        for (const tok of candidates) {
-          const res = await verifyOpcToken(tok);
-          if (res.valid && res.payload?.p) {
-            unlockedSlugs.add(res.payload.p);
-          }
-        }
-      } catch {
-        // Ignore
-      }
-    }
-
-    function isToolUnlocked(tool) {
-      return unlockedSlugs.has("*") || unlockedSlugs.has(tool.licenseSlug) || unlockedSlugs.has(tool.slug);
-    }
 
     function renderFilters() {
       const bar = document.getElementById("filterBar");
@@ -757,127 +523,41 @@
     function renderGrid() {
       const grid = document.getElementById("toolGrid");
       const list = activeCat === "all" ? TOOLS : TOOLS.filter(t => t.cat === activeCat);
-      grid.innerHTML = list.map(t => {
-        const unlocked = isToolUnlocked(t);
-        const unlockedBadge = unlocked
-          ? `<span class="unlocked-pill">${lang === "zh" ? "✓ 已解锁 Pro" : "✓ Pro Unlocked"}</span>`
-          : "";
-        return `
+      grid.innerHTML = list.map(t => `
         <article class="card">
           <div>
             <div class="card-top-meta">
               <div class="cat-tag">#${t.id} · ${t.cat.toUpperCase()}</div>
-              ${unlockedBadge}
+              <span class="unlocked-pill">${lang === "zh" ? "✓ 免码全解锁" : "✓ Free & Unlocked"}</span>
             </div>
             <h3>${lang === "zh" ? t.zh : t.en}</h3>
             <p>${lang === "zh" ? t.descZh : t.descEn}</p>
           </div>
           <div class="card-foot">
-            <span class="price">${t.price}</span>
-            <div class="card-actions">
-              <button type="button" class="buy-card-btn" data-buy-slug="${t.slug}">
-                ${unlocked ? (lang === "zh" ? "查看授权" : "License") : (lang === "zh" ? "购买 / 解锁" : "Buy / Unlock")}
-              </button>
-              <a class="launch-link" href="https://a3152557994-ship-it.github.io/${t.slug}/" target="_blank" rel="noopener">
-                ${lang === "zh" ? "立即打开 →" : "Launch →"}
-              </a>
-            </div>
+            <span class="price">${lang === "zh" ? t.priceZh : t.priceEn}</span>
+            <a class="launch-link" href="https://a3152557994-ship-it.github.io/${t.slug}/" target="_blank" rel="noopener">
+              ${lang === "zh" ? "立即免费使用 →" : "Launch Free →"}
+            </a>
           </div>
         </article>
-      `;
-      }).join("");
+      `).join("");
     }
 
     function renderAll() {
-      const hasAllAccess = unlockedSlugs.has("*");
       document.getElementById("heroTitle").textContent = lang === "zh"
-        ? `OPC 精品微工具总站（${TOOLS.length} 款在线/终端微工具 + 7 款苹果 App Store 原生软件）`
-        : `OPC Micro-Tools Hub (${TOOLS.length} Web/CLI Utilities + 7 Official App Store Apps)`;
+        ? `OPC 精品微工具总站（${TOOLS.length} 款在线/终端微工具 100% 免费开放 + 7 款苹果 App Store 原生软件）`
+        : `OPC Micro-Tools Hub (${TOOLS.length} 100% Free Web/CLI Utilities + 7 Official App Store Apps)`;
       document.getElementById("heroSub").textContent = lang === "zh"
-        ? `拒绝包月恶意扣费、拒绝敏感文件上传云端。下方 ${TOOLS.length} 款网页/CLI/插件精品工具支持免费体验核心功能，可单品永久买断，或以 ${ALL_ACCESS_PRICE} 申领 All-Access 全通码一码解锁全部 ${TOOLS.length} 款 Pro 能力。`
-        : `Zero cloud uploads, zero subscription traps. Try all ${TOOLS.length} browser/CLI utilities free — buy individual lifetime keys or grab the ${ALL_ACCESS_PRICE} All-Access Master Key.`;
+        ? `不要收费把人拒之门外！下方全部 ${TOOLS.length} 款网页、浏览器插件与终端微工具已彻底拆除付费锁与激活码门槛，完整导出、无水印下载、全量规则核验 100% 免费直用；如需离线百宝箱转存或企业私有化定制，请见下方合作专区。`
+        : `Zero paywalls, zero cloud uploads, zero activation keys. All ${TOOLS.length} browser, extension & CLI utilities below are 100% free and fully unlocked — backed by offline bundle downloads, B2B custom engineering & curated cloud guides.`;
       document.getElementById("bundleTitle").textContent = lang === "zh"
-        ? `All-Access 全站通票：${ALL_ACCESS_PRICE} 一次性买断全部 ${TOOLS.length} 款网页/终端工具`
-        : `All-Access Master Key: ${ALL_ACCESS_PRICE} One-Time Buyout for All ${TOOLS.length} Web/CLI Tools`;
-      document.getElementById("bundleDesc").innerHTML = lang === "zh"
-        ? `签发一枚 <code>p="*"</code> 全通型 Ed25519 激活码（<code>OPC1.</code>），在下方全部 ${TOOLS.length} 款网页、浏览器插件与 CLI/MCP 工具中输入同一枚激活码即可永久解锁 Pro 功能（注：不含下方苹果 App Store 独立原生软件）。`
-        : `Receive one <code>p="*"</code> Ed25519 <code>OPC1.</code> Master Key that unlocks Pro across all ${TOOLS.length} web, extension &amp; CLI/MCP tools below (excludes Apple App Store native apps).`;
-      document.getElementById("buyBundleBtn").textContent = hasAllAccess
-        ? (lang === "zh" ? "✓ 全站通票已激活（查看/换码）" : "✓ Master Key Active")
-        : (lang === "zh" ? `立即申领全通码 (${ALL_ACCESS_PRICE}) →` : `Get Master Key (${ALL_ACCESS_PRICE}) →`);
-
+        ? `🎉 全站 ${TOOLS.length} 款效率与防封微工具 100% 免费开放（免注册·免激活码·纯本地隐私）`
+        : `🎉 All ${TOOLS.length} Productivity & Anti-Ban Micro-Tools Are 100% Free (No Login · No Keys · Local-First)`;
       document.getElementById("webZoneTitle").textContent = lang === "zh"
-        ? `🛠️ ${TOOLS.length} 款精品在线 / 终端微工具（支持 OPC1. 激活码一码通用）`
-        : `🛠️ ${TOOLS.length} Local-First Web & CLI Micro-Tools (OPC1. License Compatible)`;
-      document.getElementById("webZoneSub").textContent = lang === "zh"
-        ? "100% 浏览器本地或本机终端运行 · 零云端上传"
-        : "100% Client-Side or Local CLI · Zero Cloud Data Upload";
-
-      document.getElementById("iosZoneTitle").textContent = lang === "zh"
-        ? "📱 苹果 App Store 官方原生软件（7 款独立 iOS / iPadOS / macOS 原生应用）"
-        : "📱 Official Apple App Store Native Apps (7 Standalone iOS / iPadOS / macOS Apps)";
-      document.getElementById("iosZoneBadge").textContent = lang === "zh"
-        ? "通过苹果 App Store 官方下载与内购 · 独立于网页 OPC1. 激活码体系"
-        : "Official Apple App Store Download & IAP · Independent from Web OPC1. Keys";
-      document.getElementById("iosZoneDesc").innerHTML = lang === "zh"
-        ? "以下 7 款为纯正 Swift 原生开发的零广告离线软件，严格通过 Apple App Store 官方渠道下载与内购（不适用、亦无需网页 <code>OPC1.</code> 激活码）："
-        : "These 7 native Swift offline apps are distributed and purchased exclusively through the official Apple App Store (web <code>OPC1.</code> keys do not apply):";
-
+        ? `🛠️ ${TOOLS.length} 款精品在线 / 终端微工具（100% 免费免码全解锁）`
+        : `🛠️ ${TOOLS.length} Local-First Web & CLI Micro-Tools (100% Free & Unlocked)`;
       renderFilters();
       renderGrid();
-    }
-
-    function makeOrderStamp() {
-      const d = new Date();
-      const pad = n => String(n).padStart(2, "0");
-      const ts = `${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}-${pad(d.getHours())}${pad(d.getMinutes())}${pad(d.getSeconds())}`;
-      const rand = Math.random().toString(36).slice(2, 6).toUpperCase();
-      return `OPC-${ts}-${rand}`;
-    }
-
-    function updateModalContent() {
-      const optSingle = document.getElementById("optSingle");
-      const optBundle = document.getElementById("optBundle");
-      if (selectedTool) {
-        optSingle.hidden = false;
-        document.getElementById("optSingleTitle").textContent = lang === "zh" ? `单品：${selectedTool.zh.split("·")[0].trim()}` : `Single: ${selectedTool.en.split("·")[0].trim()}`;
-        document.getElementById("optSinglePrice").textContent = `${selectedTool.price} (slug: ${selectedTool.licenseSlug})`;
-      } else {
-        optSingle.hidden = true;
-        checkoutMode = "bundle";
-      }
-
-      optBundle.classList.toggle("active", checkoutMode === "bundle");
-      optSingle.classList.toggle("active", checkoutMode === "single");
-
-      const itemName = checkoutMode === "bundle"
-        ? `OPC All-Access 全站 ${TOOLS.length} 款微工具通票 (p="*")`
-        : `${selectedTool.zh} (slug: ${selectedTool.licenseSlug})`;
-      const itemPrice = checkoutMode === "bundle" ? ALL_ACCESS_PRICE : selectedTool.price;
-
-      const cmdText = [
-        `【OPC 订单口令】${currentOrderId}`,
-        `【选购商品】${itemName}`,
-        `【订单价格】${itemPrice}`,
-        `【发货方式】请签发对应 OPC1. 离线激活码`
-      ].join("\n");
-
-      document.getElementById("orderCmdBox").textContent = cmdText;
-      const subject = encodeURIComponent(`[OPC 订单 ${currentOrderId}] ${itemName} (${itemPrice})`);
-      const body = encodeURIComponent(cmdText + "\n【接收邮箱】：");
-      document.getElementById("fallbackMailtoLink").href = `mailto:3152557994@qq.com?cc=a3152557994@gmail.com&subject=${subject}&body=${body}`;
-    }
-
-    function openCheckoutModal(tool = null, defaultMode = "bundle") {
-      selectedTool = tool;
-      checkoutMode = tool ? defaultMode : "bundle";
-      currentOrderId = makeOrderStamp();
-      updateModalContent();
-      document.getElementById("checkoutModal").hidden = false;
-    }
-
-    function closeCheckoutModal() {
-      document.getElementById("checkoutModal").hidden = true;
     }
 
     async function copyWithFeedback(text, btn, copiedLabel) {
@@ -904,72 +584,13 @@
       renderGrid();
     });
 
-    document.getElementById("toolGrid").addEventListener("click", (e) => {
-      const buyBtn = e.target.closest("[data-buy-slug]");
-      if (!buyBtn) return;
-      const slug = buyBtn.getAttribute("data-buy-slug");
-      const tool = TOOLS.find(t => t.slug === slug);
-      openCheckoutModal(tool || null, tool ? "single" : "bundle");
-    });
-
-    document.getElementById("buyBundleBtn").addEventListener("click", () => openCheckoutModal(null, "bundle"));
-    document.getElementById("headerUnlockBtn").addEventListener("click", () => openCheckoutModal(null, "bundle"));
-    document.getElementById("closeCheckoutBtn").addEventListener("click", closeCheckoutModal);
-    document.getElementById("checkoutModal").addEventListener("click", (e) => {
-      if (e.target.id === "checkoutModal") closeCheckoutModal();
-    });
-
-    document.getElementById("optBundle").addEventListener("click", () => {
-      checkoutMode = "bundle";
-      updateModalContent();
-    });
-    document.getElementById("optSingle").addEventListener("click", () => {
-      if (!selectedTool) return;
-      checkoutMode = "single";
-      updateModalContent();
-    });
-
-    document.getElementById("copyOrderCmdBtn").addEventListener("click", (e) => {
-      copyWithFeedback(
-        document.getElementById("orderCmdBox").textContent,
-        e.currentTarget,
-        lang === "zh" ? "✅ 已复制订单口令！请粘贴发给客服 3152557994" : "✅ Order Command Copied!"
-      );
-    });
-    document.getElementById("copyQqNumBtn").addEventListener("click", (e) => {
-      copyWithFeedback("3152557994", e.currentTarget, "✅ 已复制号码 3152557994");
-    });
     document.getElementById("copyQqMailBtn").addEventListener("click", (e) => {
       copyWithFeedback("3152557994@qq.com", e.currentTarget, "✅ 已复制 3152557994@qq.com");
     });
-    document.getElementById("copyGmailBtn").addEventListener("click", (e) => {
-      copyWithFeedback("a3152557994@gmail.com", e.currentTarget, "✅ 已复制 Gmail");
+    document.getElementById("copyQqNumBtn").addEventListener("click", (e) => {
+      copyWithFeedback("3152557994", e.currentTarget, "✅ 已复制 3152557994");
     });
 
-    async function handleVerifyInput(inputEl, outEl) {
-      const res = await verifyOpcToken(inputEl.value);
-      if (!res.valid) {
-        outEl.style.color = "#f87171";
-        outEl.textContent = res.message;
-        return;
-      }
-      const payload = res.payload;
-      persistVerifiedLicense(payload, res.token);
-      outEl.style.color = "#34d399";
-      const scopeText = payload.p === "*" ? `全站 ${TOOLS.length} 款微工具通票 (*)` : payload.p;
-      const expText = payload.exp ? new Date(payload.exp * 1000).toLocaleDateString() : "永久有效";
-      outEl.textContent = `验签通过 ✓ 已保存至本机 ｜ 适用产品：${scopeText} ｜ 档位：${payload.plan || "pro"} ｜ 有效期：${expText}`;
-      renderAll();
-    }
-
-    document.getElementById("verifyBtn").addEventListener("click", () => {
-      handleVerifyInput(document.getElementById("keyInput"), document.getElementById("verifyOut"));
-    });
-    document.getElementById("modalVerifyBtn").addEventListener("click", () => {
-      handleVerifyInput(document.getElementById("modalKeyInput"), document.getElementById("modalVerifyOut"));
-    });
-
-    await restoreSavedTokens();
     renderAll();
   </script>
 </body>

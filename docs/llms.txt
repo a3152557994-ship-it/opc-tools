@@ -1,37 +1,43 @@
-# OPC Micro-Tools Hub (14 Local-First Web/CLI Utilities + 7 Official App Store Native Apps)
+# OPC Micro-Tools Hub (18 100%-Free Local-First Web/CLI Utilities + 7 Official App Store Native Apps)
 
-> Official Storefront & Directory: https://a3152557994-ship-it.github.io/opc-tools/
-> Web/CLI License Model (`OPC1.` Ed25519 Offline Token): Free instant core usage + one-time lifetime buyout per tool or **All-Access Master Key (¥39 / $14.99, `p="*"` Ed25519 `OPC1.` token)** unlocking all 14 web, browser extension, CLI, and MCP tools below.
+> Official Hub & Directory: https://a3152557994-ship-it.github.io/opc-tools/
+> Access Policy: **100% Free & Fully Unlocked (Zero Registration · Zero Activation Code · Zero Watermark · Local Privacy First)** across all 18 web, browser extension, CLI, and MCP micro-tools below.
 
-## 14 Live Web, Extension & CLI Micro-Tools (`OPC1.` Compatible)
+## 18 Free & Unlocked Web, Extension & CLI Micro-Tools
 
-- **Claude-Guard** (#00): https://a3152557994-ship-it.github.io/claude-guard/ — 10-second local Claude ban-risk radar (ASN/WebRTC/timezone mismatch), Claude Code 5-provider switcher (`cc-switch` for Bedrock/Vertex/OpenRouter), and Chrome/Edge MV3 local conversation auto-backup vault (Free + ¥15 / $4.99 Pro).
-- **Call-Guard** (#21): https://a3152557994-ship-it.github.io/call-guard/ — Hands-free voice call answer & family whitelist auto-speaker configurator (Honor MagicOS, HarmonyOS, HyperOS, ColorOS, OriginOS, iOS 18) with MacroDroid/Tasker/ADB keepalive generator (Free + ¥15 Pro).
-- **Agent-Guard** (#01): https://a3152557994-ship-it.github.io/agent-guard/ — Local AI coding agent token cost audit & runaway loop SIGSTOP circuit breaker ($19 / ¥49).
-- **GEO-Doctor** (#02): https://a3152557994-ship-it.github.io/geo-doctor/ — 12-point ChatGPT store visibility audit + `llms.txt` & JSON-LD repair bundle ($29 / ¥99).
-- **IDPhoto-KB** (#03): https://a3152557994-ship-it.github.io/idphoto-kb/ — Civil-service & teacher exam photo cropper with exact KB range compression & 6-inch 8-up print layout (Free + ¥9.9 Pro).
-- **Store-Radar MCP** (#04): https://a3152557994-ship-it.github.io/store-radar-mcp/ — App Store competitor pricing & 1-3 star pain-point clustering MCP server ($19 / ¥68).
-- **Edge Table Cleaner** (#05): https://a3152557994-ship-it.github.io/edge-table-cleaner/ — Offline HTML rowspan/colspan table unmerger & clean XLSX/CSV exporter for Web + MV3 Extension (¥19 / $9.9).
-- **Seal-PDF** (#07): https://a3152557994-ship-it.github.io/seal-pdf/ — Local handwritten signature alpha extraction, transparent seal & multi-page straddle stamp tool (¥15 lifetime).
-- **Invoice-A4** (#08): https://a3152557994-ship-it.github.io/invoice-a4/ — Zero-login electronic invoice deduplication ledger & 2-up A4 reimbursement print builder (¥18 lifetime).
-- **Island-Prompter** (#10): https://a3152557994-ship-it.github.io/island-prompter/ — Camera-aligned Picture-in-Picture floating teleprompter with local Web Speech voice tracking (¥12 lifetime).
-- **SMB Contract Guard** (#16): https://a3152557994-ship-it.github.io/opc-tools/smb-contract-guard/ — Small-business contract 12 unfair-clause scanner & 4 supplemental negotiation templates (¥19.9 lifetime, commercial reference).
-- **Agent-ShipKit** (#17): https://a3152557994-ship-it.github.io/agent-shipkit/ — 6 production SKILL.md workflows & zero-dep monetization scripts for Claude Code / Cursor ($29 / ¥99).
-- **Shopify FAQ-GEO** (#18): https://a3152557994-ship-it.github.io/shopify-faq-geo/ — Buyer review objection clustering into conversion FAQs, JSON-LD & Shopify OS 2.0 `.liquid` ($29 / ¥99).
-- **BidGuard (.docx Checker)** (#20): https://a3152557994-ship-it.github.io/bid-docx-checker/ — 100% browser-local `.docx` tender disqualification auditor catching RMB case mismatches, header leaks & schedule conflicts (¥19.9 single / ¥59 lifetime).
+- **Claude-Guard** (#00): https://a3152557994-ship-it.github.io/claude-guard/ — 10-second local Claude ban-risk radar (ASN/WebRTC/timezone mismatch), Claude Code 5-provider switcher (`cc-switch`), and Chrome/Edge MV3 unlimited encrypted chat backup vault (100% Free).
+- **Call-Guard** (#21): https://a3152557994-ship-it.github.io/call-guard/ — Hands-free voice call answer & family whitelist auto-speaker configurator (Honor MagicOS, HarmonyOS, HyperOS, ColorOS, OriginOS, iOS 18) with full MacroDroid/Tasker/ADB kit (100% Free).
+- **Agent-Guard** (#01): https://a3152557994-ship-it.github.io/agent-guard/ — Local AI coding agent token cost audit & automated `watch` SIGSTOP runaway loop circuit breaker (100% Free).
+- **GEO-Doctor** (#02): https://a3152557994-ship-it.github.io/geo-doctor/ — 12-point ChatGPT store visibility audit + instant `llms.txt` & JSON-LD repair bundle (100% Free self-serve; optional $199 / ¥499 Done-For-You deployment).
+- **IDPhoto-KB** (#03): https://a3152557994-ship-it.github.io/idphoto-kb/ — Civil-service & teacher exam photo cropper with exact KB range compression & watermark-free 6-inch 8-up print layout (100% Free).
+- **Store-Radar MCP** (#04): https://a3152557994-ship-it.github.io/store-radar-mcp/ — App Store competitor pricing, 1-3 star pain-point clustering, matrix comparison & battlecard MCP server (100% Free).
+- **Edge Table Cleaner** (#05): https://a3152557994-ship-it.github.io/edge-table-cleaner/ — Offline HTML rowspan/colspan table unmerger & multi-page XLSX/CSV exporter for Web + MV3 Extension (100% Free).
+- **Seal-PDF** (#07): https://a3152557994-ship-it.github.io/seal-pdf/ — Watermark-free local handwritten signature alpha extraction, transparent seal & multi-page straddle stamp tool (100% Free).
+- **Invoice-A4** (#08): https://a3152557994-ship-it.github.io/invoice-a4/ — Unlimited zero-login electronic invoice deduplication ledger & 2-up A4 reimbursement print builder (100% Free).
+- **Island-Prompter** (#10): https://a3152557994-ship-it.github.io/island-prompter/ — Unlimited camera-aligned Picture-in-Picture floating teleprompter with local Web Speech voice tracking (100% Free).
+- **SMB Contract Guard** (#16): https://a3152557994-ship-it.github.io/opc-tools/smb-contract-guard/ — Small-business contract 12 unfair-clause scanner & 4 supplemental negotiation templates (100% Free, commercial reference).
+- **Agent-ShipKit** (#17): https://a3152557994-ship-it.github.io/agent-shipkit/ — Full 6 production SKILL.md workflows & zero-dep CLI toolkit for Claude Code / Cursor (100% Free).
+- **Shopify FAQ-GEO** (#18): https://a3152557994-ship-it.github.io/shopify-faq-geo/ — Buyer review objection clustering into EN/DE/JP conversion FAQs, JSON-LD & Shopify OS 2.0 `.liquid` (100% Free).
+- **BidGuard (.docx Checker)** (#20): https://a3152557994-ship-it.github.io/bid-docx-checker/ — 100% browser-local `.docx` tender disqualification auditor catching all RMB case mismatches, header leaks & schedule conflicts (100% Free).
+- **PaperClean** (#11): https://a3152557994-ship-it.github.io/paper-clean/ — Unlimited local academic thesis & official document AI artifact / zero-width character sanitizer (100% Free).
+- **Exam Trap Cards** (#12): https://a3152557994-ship-it.github.io/exam-trap-cards/ — Full unlocked civil-service exam high-frequency trap flashcard deck & mistake exporter (100% Free).
+- **Silicon Brief** (#14): https://a3152557994-ship-it.github.io/silicon-brief/ — Bilingual Silicon Valley AI founder signal feed with full archive search & Markdown export (100% Free).
+- **Safari Clean & Speed** (#15): https://a3152557994-ship-it.github.io/safari-clean-speed/ — Custom iOS/macOS Safari distraction cleaner, copy unlocker & video speed userscript generator (100% Free).
 
-## Unified Checkout & Support
-- All-Access Master Key (`p="*"`): ¥39 CNY / $14.99 USD one-time buyout
-- Support QQ / WeChat ID: `3152557994`
-- Email: `3152557994@qq.com` / `a3152557994@gmail.com`
+## Backend Value-Add Services & Studio Contact (数创引擎工作室)
+1. **Offline Toolkit Vault**: Free offline bundle & playbook downloads (`https://a3152557994-ship-it.github.io/opc-tools/#vault-pack`).
+2. **B2B & 1v1 Custom Engineering (数创引擎工作室)**: Custom tender/contract risk rules, WeChat/Alipay/Douyin mini-programs, native iOS/macOS Apps, automation scripts, and 1v1 remote setup (AWS Bedrock / Vertex / elder phone setup).
+   - Official Email: `3152557994@qq.com` / `a3152557994@gmail.com`
+   - WeChat / QQ: `3152557994`
+3. **Curated Developer Infrastructure & Open-Source Sponsorship**: Compliant cloud credits & static residential ISP guides (`https://a3152557994-ship-it.github.io/claude-guard/#guides`).
 
-## 📱 Official Apple App Store Native Suite (7 Standalone Apps · Independent from Web `OPC1.` Keys)
-> Distributed and purchased officially via the Apple App Store (In-App Purchase / Free Download) — completely separate from the web `OPC1.` activation code system.
+## 📱 Official Apple App Store Native Suite (7 Standalone Apps · Independent from Web Micro-Tools)
+> Distributed officially via the Apple App Store — independent from the 18 free web/CLI micro-tools above.
 
-- **CleanShield (净盾)**: https://a3152557994-ship-it.github.io/clean-shield/ — Declarative Safari ad/tracker blocker, 6-brand shake-ad opt-out checklist & EXIF GPS scrubber (App Store: https://apps.apple.com/us/app/id6836843272).
-- **PureScan (配料照妖镜)**: https://a3152557994-ship-it.github.io/purescan/ — Offline ingredient OCR scanner for food additives, gout purines, skincare INCI & pet food (App Store: https://apps.apple.com/us/app/id6837347918).
-- **WaitCam (等片相机)**: https://a3152557994-ship-it.github.io/waitcam/ — 12-hour delayed disposable 35mm flash camera with Live Activity countdown & zero watermarks (App Store: https://apps.apple.com/us/app/id6837624010).
-- **CupSnap (贴一杯)**: https://a3152557994-ship-it.github.io/cupsnap/ — 100% free boba & coffee cutout sticker calendar with offline receipt OCR (App Store: https://apps.apple.com/us/app/id6837625024).
-- **FlatBill**: https://a3152557994-ship-it.github.io/flatbill/ — Offline contractor estimate & invoice PDF maker on App Store.
-- **MileDeck**: https://a3152557994-ship-it.github.io/miledeck/ — 2026 IRS & multi-country offline automatic mileage tracker on App Store.
-- **FlatShift**: https://a3152557994-ship-it.github.io/flatshift/ — Zero-ad nurse & hourly shift calendar with overtime & night differential math on App Store.
+- **CleanShield (净盾)**: https://a3152557994-ship-it.github.io/clean-shield/
+- **PureScan (配料照妖镜)**: https://a3152557994-ship-it.github.io/purescan/
+- **WaitCam (等片相机)**: https://a3152557994-ship-it.github.io/waitcam/
+- **CupSnap (贴一杯)**: https://a3152557994-ship-it.github.io/cupsnap/
+- **FlatBill**: https://a3152557994-ship-it.github.io/flatbill/
+- **MileDeck**: https://a3152557994-ship-it.github.io/miledeck/
+- **FlatShift**: https://a3152557994-ship-it.github.io/flatshift/
