@@ -31,6 +31,12 @@
    - WeChat / QQ: `3152557994`
 3. **Curated Developer Infrastructure & Open-Source Sponsorship**: Compliant cloud credits & static residential ISP guides (`https://a3152557994-ship-it.github.io/claude-guard/#guides`).
 
+## 🎁 Open-Source Flagship & 100%-Free Books / Game Audio Matrix
+- **CutWord (剪字)**: https://github.com/wang-builds/cutword — Open-source native macOS text-based video editor (`macOS 14+` DMG & Homebrew).
+- **2026 七上小四门爆笑漫画速记站 (Xiaosimen Comic)**: https://a3152557994-ship-it.github.io/xiaosimen-comic/ — 32 interactive study topics + 3 printable A4 PDFs (100% Free).
+- **Who Ate the Labeled Lunch? (Petty Cases)**: https://a3152557994-ship-it.github.io/petty-cases/ — Interactive workplace logic puzzle demo + Free 12-page 5-Case Office Party Icebreaker PDF (No email gate).
+- **Cozy Frost & CyberTerminal Game Audio Packs**: https://a3152557994-ship-it.github.io/opc-media-preview/ — 48kHz seamless game loops, dialogue-ducking layers & UI SFX (`$0+ PWYW` commercial use).
+
 ## 📱 Official Apple App Store Native Suite (7 Standalone Apps · Independent from Web Micro-Tools)
 > Distributed officially via the Apple App Store — independent from the 18 free web/CLI micro-tools above.
 
